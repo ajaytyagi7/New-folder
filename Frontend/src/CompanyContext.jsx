@@ -11,7 +11,7 @@ export const CompanyProvider = ({children}) => {
 
     const logout = () => {
         sessionStorage.removeItem('company');
-        navigate('/login');
+        navigate('/CompanyLogin');
         enqueueSnackbar( 'Logged out Successfully', { variant : 'success' } );
         setLoggedIn(false);
 

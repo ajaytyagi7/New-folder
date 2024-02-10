@@ -4,6 +4,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import * as Yup from 'yup';
 import { useNavigate } from 'react-router-dom';
+import useUserContext from '../UserContext';
 
 const LoginSchema=Yup.object().shape({
   email:Yup.string().email('Invalid Email').required('Password Require'),
@@ -16,6 +17,8 @@ const LoginSchema=Yup.object().shape({
 const Login = () => {
 
   const navigate=useNavigate();
+
+  const {setseroggedIn} =useUserContext();
 
   const loginForm=useFormik({
 
