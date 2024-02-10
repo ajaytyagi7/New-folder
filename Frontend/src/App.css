@@ -1,0 +1,50 @@
+.header{
+    background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.482),rgba(0, 0, 0, 0.532)),
+    url(https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.list-btn{
+    border: 1px solid black;
+     border-radius:20px ;
+}
+.list-dream{
+    font-size: 100px;
+}
+.home-campus{
+    font-size: 50px;
+    padding: 20px;
+}
+.contact-bg-img{
+    background-image: url(https://img.freepik.com/premium-photo/email-marketing-newsletter-concept-contact-us-by-newsletter-email-protect-your-personal-information-from-spam-mail-concept-scheme-direct-sales-business-list-clients-mailing_150455-17438.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais);
+    background-size: cover;
+    height:90vh;
+}
+.jobpost-bg-img{
+    background-image: url(https://img.freepik.com/free-photo/abstract-textured-backgound_1258-30516.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais);
+    background-size: cover;
+    height:100vh;
+}
+.employe-login-bg-img{
+    background-image: url(https://img.freepik.com/free-photo/close-up-lights-red_23-2147798916.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais);
+    background-size: cover;
+    height:90vh;
+}
+.company-login-bg-img{
+    background-image: url(https://img.freepik.com/premium-photo/christmas-lights-bokeh_127657-16464.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais);
+    background-size: cover;
+    height:90vh;
+}
+.employe-signup-bg-img{
+    background-image: url(https://img.freepik.com/free-photo/colorful-lights-garland_23-2147785804.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais);
+    background-size: cover;
+    height:90vh;
+}
+.company-signup-bg-img{
+    background-image: url(https://img.freepik.com/free-photo/degrade-blurred-background-with-faded-lines_23-2148231693.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais);
+    background-size: cover;
+    height:90vh;
+}
+
+
