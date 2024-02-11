@@ -27,7 +27,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            <img src="" alt="" />
+            <img style={{height:100}} src="https://www.logomaker.com/api/main/images/1j_ojFVGOMkX9W_reBe4hGfW2KDy_UYL4EePgig3aD1fqVY4nSEpj...Jo8...g7LAtAuAUGgwJRJ4EwiTI_D9lUyU9o...jiNPo1HXnh4xzxSCKtUTh9...LEqTFP_dp1R_j_Yh1MwVpVqUfjG5E2TcYN1xMpaD4qBiCIEstWLQLC1ory13SbdLP8bNH5d83Q--" />
           </a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>

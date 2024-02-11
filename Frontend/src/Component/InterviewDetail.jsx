@@ -39,7 +39,9 @@ const InterviewDetail = () => {
 
   return (
     <div>
-     
+      <div className='container'>
+        {displayDetails()}
+      </div>
     </div>
   )
 }

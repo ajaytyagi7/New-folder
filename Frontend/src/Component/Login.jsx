@@ -18,7 +18,8 @@ const Login = () => {
 
   const navigate=useNavigate();
 
-  const {setseroggedIn} =useUserContext();
+  const {setuserloggedin} = useUserContext();
+
 
   const loginForm=useFormik({
 

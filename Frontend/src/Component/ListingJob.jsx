@@ -7,15 +7,15 @@ const ListingJob = () => {
 
   const [joblist, setJoblist] = useState([])
   const [masterlist, setmasterlist] = useState([])
-  const searchRef=useRef(null)
+  const searchRef = useRef(null)
 
-  const JobRole=['Web Developer','Frontend Developer','Backend Developer','Marketing','BPO','Full Stack Developer']
+  const JobRole = ['Web Developer', 'Frontend Developer', 'Backend Developer', 'Marketing', 'BPO', 'Full Stack Developer']
   const [RoleList, setRoleList] = useState([])
 
-  const city=['Lucknow','Noida','Delhi','Gurugram','Banglore','Hydrabad']
+  const city = ['Lucknow', 'Noida', 'Delhi', 'Gurugram', 'Banglore', 'Hydrabad']
   const [citylist, setCitylist] = useState([])
 
-  const salary=['15000','20000','30000','250000','35000','40000','45000']
+  const salary = ['15000', '20000', '30000', '250000', '35000', '40000', '45000']
   const [salaryList, setSalaryList] = useState([]);
 
   const searchJob = () => {
@@ -47,40 +47,53 @@ const ListingJob = () => {
     setJoblist(filteredData)
   }
 
-  const SelectJobRole=(e,JobRole) =>{
+  const SelectJobRole = (e, JobRole) => {
     console.log(e.target.checked);
-    if(RoleList.includes(JobRole)){
-      const filterJobRole=RoleList.filter((b) =>{return b !==JobRole});
-      if(filterRole.length===0){
-        setJoblist(RoleList);
-      }else{
-        const filterData=joblist.filter((job) =>{return filterJobRole.includes(job.JobRole)})
-        setJoblist(filterJobRole)
+    if (RoleList.includes(JobRole)) {
+      const filterJobRole = RoleList.filter((b) => { return b !== JobRole });
+      setRoleList(filterJobRole)
+      if (filterJobRole.length === 0) {
+        setJoblist(masterlist);
+      } else {
+        const filterData = joblist.filter((job) => { return filterJobRole.includes(job.title) })
+        setJoblist(filterData)
       }
+    }else{
+      setRoleList([...RoleList, JobRole])
+      const filterData = masterlist.filter((job) => { return [...RoleList, JobRole].includes(job.title) })
+      // console.log(rol);
+      console.log(filterData);
+      setJoblist(filterData)
     }
   }
 
-  const SelectCity=(e,city) =>{
+  const SelectCity = (e, city) => {
     console.log(e.target.checked);
-    if(citylist.includes(city)){
-      const filtercity=citylist.filter((b) =>{return b !==city});
-      if(filtercity.length===0){
-        setJoblist(citylist);
-      }else{
-        const filterData=joblist.filter((c) =>{return filtercity.includes(c.city)})
-        setJoblist(filtercity)
+    if (citylist.includes(city)) {
+      const filtercity = citylist.filter((b) => { return b !== city });
+      setCitylist(filtercity)
+      if (filtercity.length === 0) {
+        setJoblist(masterlist);
+      } else {
+        const filterData = joblist.filter((c) => { return filtercity.includes(c.address) })
+        setJoblist(filterData)
       }
-    }
+  }else{
+    setCitylist([...citylist, city])
+    const filterData = masterlist.filter((c) => { return [...citylist, city].includes(c.address) })
+    console.log(filterData);
+    setJoblist(filterData)
   }
+}
 
-  const SelectSalary=(e,salary) =>{
+  const SelectSalary = (e, salary) => {
     console.log(e.target.checked);
-    if(salaryList.includes(salary)){
-      const filtersalary=salaryList.filter((b) =>{return b !==salary});
-      if(filtersalary.length===0){
+    if (salaryList.includes(salary)) {
+      const filtersalary = salaryList.filter((b) => { return b !== salary });
+      if (filtersalary.length === 0) {
         setJoblist(salaryList);
-      }else{
-        const filterData=joblist.filter((s) =>{return filtersalary.includes(s.salary)})
+      } else {
+        const filterData = joblist.filter((s) => { return filtersalary.includes(s.salary) })
         setJoblist(filtersalary)
       }
     }
@@ -95,17 +108,18 @@ const ListingJob = () => {
     console.table(data);
 
     setJoblist(data);
+    setmasterlist(data);
   }
 
   useEffect(() => {
     fetchjobData();
   }, [])
 
-    return (
+  return (
     <div className='container'>
       <div className='d-flex mt-3 w-50' style={{ position: 'relative', left: 400 }}>
         <input type="text" className='form-control' placeholder='Search job....' />
-        <button className='btn btn-success'onPointerLeaveCapture={searchJob}>Search</button>
+        <button className='btn btn-success' onPointerLeaveCapture={searchJob}>Search</button>
       </div>
       <div className='container-fluid'>
         <div className='row'>
@@ -113,37 +127,37 @@ const ListingJob = () => {
             <div className='card bg-secondary-subtle'>
               <div className='card-body mt-3'>
                 <h4>Filter Job Role</h4>
-                       {
-                        JobRole.map((JobRole)=>{
-                          return <div>
-                            <input type="checkbox" checked={RoleList.includes(JobRole)} onChange={(e) =>{SelectJobRole(e,JobRole)}} />
-                            <label className='mx-2 '>{JobRole}</label>
+                {
+                  JobRole.map((role) => {
+                    return <div>
+                      <input type="checkbox" checked={RoleList.includes(role)} onChange={(e) => { SelectJobRole(e, role) }} />
+                      <label className='mx-2 '>{role}</label>
 
-                          </div>
-                        })
-                       } 
-                       <hr />
-                       <h4>Filter City</h4>  
-                       {
-                        city.map((city)=>{
-                          return <div>
-                            <input type="checkbox" checked={citylist.includes(city)} onChange={(e) =>{SelectCity(e,city)}} />
-                            <label className='mx-2'>{city}</label>
+                    </div>
+                  })
+                }
+                <hr />
+                <h4>Filter City</h4>
+                {
+                  city.map((city) => {
+                    return <div>
+                      <input type="checkbox" checked={citylist.includes(city)} onChange={(e) => { SelectCity(e, city) }} />
+                      <label className='mx-2'>{city}</label>
 
-                          </div>
-                        })
-                       }   
-                        <hr />
-                       <h4>Filter Salary</h4>  
-                       {
-                        salary.map((salary)=>{
-                          return <div>
-                            <input type="checkbox" checked={salaryList.includes(salary)} onChange={(e) =>{SelectSalary(e,salary)}} />
-                            <label className='mx-2'>{salary}</label>
+                    </div>
+                  })
+                }
+                <hr />
+                <h4>Filter Salary</h4>
+                {
+                  salary.map((salary) => {
+                    return <div>
+                      <input type="checkbox" checked={salaryList.includes(salary)} onChange={(e) => { SelectSalary(e, salary) }} />
+                      <label className='mx-2'>{salary}</label>
 
-                          </div>
-                        })
-                       }   
+                    </div>
+                  })
+                }
               </div>
 
             </div>
@@ -159,8 +173,8 @@ const ListingJob = () => {
                     <p>→{item.address}</p>
                     <h6>₹ {item.salary}</h6>
                     <p>{item.experience}</p>
-                   <p>{item.description}</p>
-                    <Link to={"/detail/"+item._id}> <button className='btn btn-primary float-end'>View Details</button></Link>
+                    <p>{item.description}</p>
+                    <Link to={"/detail/" + item._id}> <button className='btn btn-primary float-end'>View Details</button></Link>
                   </div>
 
                 </div>)
