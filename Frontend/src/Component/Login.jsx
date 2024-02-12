@@ -6,6 +6,7 @@ import * as Yup from 'yup';
 import { useNavigate } from 'react-router-dom';
 import useUserContext from '../UserContext';
 
+
 const LoginSchema=Yup.object().shape({
   email:Yup.string().email('Invalid Email').required('Password Require'),
   password:Yup.string().required('Password is Require').min(8,'Password is too short'),
@@ -18,7 +19,7 @@ const Login = () => {
 
   const navigate=useNavigate();
 
-  const {setuserloggedin} = useUserContext();
+  const {setuserloggedIn} = useUserContext();
 
 
   const loginForm=useFormik({
@@ -44,6 +45,7 @@ const Login = () => {
         enqueueSnackbar('Logged in Successfully',{variant:'success'});
 
         sessionStorage.setItem('user',JSON.stringify(data));
+        setuserloggedIn(true);
         navigate('/')
       }else if(res.status==401){
         enqueueSnackbar('Inavlid Email',{variant:'error'});

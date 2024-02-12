@@ -24,16 +24,21 @@ const Home = () => {
   }
   return (
     <div className='container-fluid'>
-        <header className='text-white header d-flex p-5'>
-            <div className='container-fluid'> 
-              <h1 className='mx-5 list-dream fw-bold'>Your Dream <br />
-               Job is Waiting</h1>
-              <div className='d-flex mt-4'style={{  gap:10}}>
-               <input type="text" className='form-control taxt-dark w-25 ' placeholder='Job title or Company name 'ref={searchRef} />
-               <input type="text" className='form-control taxt-dark w-25' placeholder='City or Region ' />
-               
-               <button className='btn btn-success' onClick={searchProduct}>Search </button>
-               <Link className='text-decoration-none fw-bold btn btn-warning' to={'/ListingJob'}>Apply Interview</Link>
+        <header className='text-white header row p-5'>
+            <div className='col'> 
+              <p className='mx-auto fs-1  fw-bold '>Your Dream <br />
+               Job is Waiting</p>
+              <div className='row mt-4'>
+                <div className='col'>
+               <input type="text" className='form-control taxt-dark  ' placeholder='Job title or Company name 'ref={searchRef} />
+               </div>
+               <div className='col'>
+               <input type="text" className='form-control taxt-dark ' placeholder='City or Region ' />
+               </div>
+               <div className='col'>
+              <button className='btn btn-success' onClick={searchProduct}>Search </button>
+              </div>
+              
               </div>
                
             </div>
@@ -50,19 +55,19 @@ const Home = () => {
           <div className=' container text-center mt-4 overflow-hidden '>
             <div className='row gx-1 ' style={{gap:20}}>
               <div className='card col'>
-                <img src="https://img.freepik.com/premium-photo/hand-holding-silver-pen-against-grey-background-with-vignette_1134-82543.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais" alt="" />
+                <img className='img-fluid' style={{height:200}}  src="https://img.freepik.com/premium-photo/hand-holding-silver-pen-against-grey-background-with-vignette_1134-82543.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais" alt="" />
                 <h5 className='mt-2'>Design & Creative</h5>
               </div>
               <div className='card col'>
-                <img style={{height:200}} src="https://img.freepik.com/free-photo/multiethnic-team-sharing-ideas-about-industrial-project-using-two-monitors-with-d-gears-metalic_482257-2641.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais" alt="" />
+                <img className='img-fluid' style={{height:200}} src="https://img.freepik.com/free-photo/multiethnic-team-sharing-ideas-about-industrial-project-using-two-monitors-with-d-gears-metalic_482257-2641.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais" alt="" />
                 <h5 className='mt-2'>Design & Development</h5>
               </div>
               <div className='card col '>
-                <img src="https://img.freepik.com/free-photo/medium-shot-woman-working-laptop_23-2150323516.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais" alt="" />
+                <img className='img-fluid' style={{height:200}} src="https://img.freepik.com/free-photo/medium-shot-woman-working-laptop_23-2150323516.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais" alt="" />
                 <h5 className='mt-2'>Web Development</h5>
               </div>
               <div className='card col '>
-                <img src="https://img.freepik.com/free-photo/front-view-pretty-woman-showing-diagrams-working-office_140725-109240.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais" alt="" />
+                <img className='img-fluid' style={{height:200}} src="https://img.freepik.com/free-photo/front-view-pretty-woman-showing-diagrams-working-office_140725-109240.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais" alt="" />
                 <h5 className='mt-2'>Sales And Marketing</h5>
               </div>
             </div>

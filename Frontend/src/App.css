@@ -3,15 +3,13 @@
     url(https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-size: cover;
     background-position: center;
-    height: 60vh;
+    height: 90vh;
 }
 .list-btn{
     border: 1px solid black;
      border-radius:20px ;
 }
-.list-dream{
-    font-size: 100px;
-}
+
 .home-campus{
     font-size: 50px;
     padding: 20px;

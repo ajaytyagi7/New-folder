@@ -90,12 +90,18 @@ const ListingJob = () => {
     console.log(e.target.checked);
     if (salaryList.includes(salary)) {
       const filtersalary = salaryList.filter((b) => { return b !== salary });
+      setSalaryList(filtersalary)
       if (filtersalary.length === 0) {
-        setJoblist(salaryList);
+        setJoblist(masterlist);
       } else {
         const filterData = joblist.filter((s) => { return filtersalary.includes(s.salary) })
-        setJoblist(filtersalary)
+        setJoblist(filterData)
       }
+    }else{
+      setSalaryList([...salaryList,salary])
+      const filterData=masterlist.filter((s) =>{return [...salaryList,salary].includes(c.salary)})
+      console.log(filterData)
+      setJoblist(filterData);
     }
   }
 

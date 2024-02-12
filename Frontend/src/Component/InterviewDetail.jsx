@@ -23,15 +23,30 @@ const InterviewDetail = () => {
     const displayDetails= () =>{
       if(interviewData !==null){
         return <div  style={{ overflow: 'hidden' }}>
-          <div className='container'>
-            <div className='row'>
-              <div className='col-md-9'>
+          <div className='container-fluid row'>
+            <div className='card w-75 mx-auto mt-5 '>
+              <div className='col p-4'>
                 <div>
-                  {interviewData.title}
-                  {interviewData.name }
+                  <h5>{interviewData.title}</h5>
+                  <p>{interviewData.name}</p>
+                  <p>{interviewData.experience}</p>
+                  <p>{interviewData.address}</p>
+                  <hr />
+                  <button className='btn btn-primary float-end '>Apply Application</button>
                 </div>
               </div>
             </div>
+            <div className='card mx-auto w-75 mt-3 '>
+              <div className='col p-3 '>
+                <div>
+                  <h4>Job Details</h4><hr />
+                  <h6 className='fw-bold'>Pay</h6>
+                  <div className='mx-3 bg-dark-subtle px-2 'style={{width:120}}>{interviewData.salary}</div>
+                </div>
+              </div>
+            </div>
+                  
+            
           </div>
         </div>
       }
