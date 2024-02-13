@@ -70,11 +70,7 @@ const Navbar = () => {
                   Contact Us
                 </NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/About">
-                  About Us
-                </NavLink>
-              </li>
+             
 
               {showCompanyOptions()}
 

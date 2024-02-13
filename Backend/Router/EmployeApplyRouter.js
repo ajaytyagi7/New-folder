@@ -16,14 +16,14 @@ router.post('/add',(req,res) =>{
 });
 
 router.get('/getall',(req,res) => {
-
-
     Model.find()
     .then((result) => {
         res.json(result)
     }).catch((err) => {
         res.status(500).json(err)
     });
+
+
 });
 
 module.exports=router;

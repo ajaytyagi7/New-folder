@@ -30,7 +30,7 @@ const InterviewDetail = () => {
                   <h5 className='fw-bold'>{interviewData.title}</h5>
                   <p>{interviewData.name}</p>
                   <p>{interviewData.experience}</p>
-                  <p><i class="fa-thin fa-location-dot"></i>{interviewData.address}</p>
+                  <p>{interviewData.address}</p>
                   <hr />
                   <Link to={'/EmployeApply'}><button className='btn btn-primary float-end '>Apply Application</button></Link>
                 </div>
