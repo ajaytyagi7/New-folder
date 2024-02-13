@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const InterviewDetail = () => {
 
@@ -30,9 +30,9 @@ const InterviewDetail = () => {
                   <h5 className='fw-bold'>{interviewData.title}</h5>
                   <p>{interviewData.name}</p>
                   <p>{interviewData.experience}</p>
-                  <p><i class="fa-solid fa-location-dot"></i>{interviewData.address}</p>
+                  <p><i class="fa-thin fa-location-dot"></i>{interviewData.address}</p>
                   <hr />
-                  <button className='btn btn-primary float-end '>Apply Application</button>
+                  <Link to={'/EmployeApply'}><button className='btn btn-primary float-end '>Apply Application</button></Link>
                 </div>
               </div>
             </div>

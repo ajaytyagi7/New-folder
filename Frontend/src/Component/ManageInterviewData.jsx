@@ -19,12 +19,17 @@ const ManageInterviewData = () => {
     },[]);
 
     const deleteInterviewData=async() =>{
-            const res=await fetch('http://localhost:4000/job/delete/' +id,{method:'Delete'});
+        console.log(id);
+            const res=await fetch('http://localhost:4000/job/delete/' +id,{ method:'Delete'});
             console.log(res.status);
+
             if(res.status===200){
                 enqueueSnackbar('Details Deleted Successfully',{variant:'success'});
+                fetchInterviewData();
             }
     }
+
+   
 
 
     const displayManageInterviewData=() =>{
@@ -36,7 +41,10 @@ const ManageInterviewData = () => {
                     <th>Address</th>
                     <th>Salary</th>
                     <th>Experience</th>
-                    <th></th>
+                    <th>Skill</th>
+                    <th>Education</th>
+                    <th>Delete Data</th>
+
 
                 </tr>
             </thead>
@@ -49,7 +57,10 @@ const ManageInterviewData = () => {
                             <td>{interview.address}</td>
                             <td>{interview.salary}</td>
                             <td>{interview.experience}</td>
+                            <td>{interview.skill}</td>
+                            <td>{interview.education}</td>
                             <td>
+
                                 <button className='btn btn-danger' onClick={() => { deleteInterviewData(interview._id) }}>Delete</button>
                             </td>
 

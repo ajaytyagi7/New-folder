@@ -20,14 +20,14 @@ const Home = () => {
       return job.name.toLowerCase().includes(searchRef.current.value.toLowerCase());
     });
     console.log(searchProduct)
-    setproductList(filterData);
+    setjobList(filterData);
   }
   return (
     <div className='container-fluid'>
         <header className='text-white header row p-5'>
             <div className='col'> 
-              <p className='  fw-bold 'style={{fontSize:"100px"}}>Your Dream <br />
-               Job is Waiting</p>
+              <h1 className='  fw-bold '>Your Dream <br />
+               Job is Waiting</h1>
                </div>
               <div className='row mt-4'>
                 <div className='col'>
