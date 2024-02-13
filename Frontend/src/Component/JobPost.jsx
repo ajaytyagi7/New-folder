@@ -50,7 +50,7 @@ const JobPost = () => {
         validationSchema:JobPostSchema
     });
   return (
-    <div className='container-fluid jobpost-bg-img text-white'>
+    <div className='container-fluid  '>
         <div className='col-md-4 mx-auto py-5'>
             <div className=''>
                 <div className='card-body'>
@@ -64,7 +64,7 @@ const JobPost = () => {
                         <span className='ms-4 fs-6 text-danger'>{  JobPostForm.errors.email}</span>
                          <input type="text" className='form-control mb-3' id='name' onChange={JobPostForm.handleChange} value={JobPostForm.values.name} />
 
-                        <label htmlFor="adress"> Enter Address</label>
+                        <label htmlFor="address"> Enter Address</label>
                          <span className='ms-4 fs-6 text-danger'>{  JobPostForm.errors.email}</span>
                         <input type="text" className='form-control mb-3' id='address' onChange={JobPostForm.handleChange} value={JobPostForm.values.address} />
 
@@ -76,9 +76,38 @@ const JobPost = () => {
                          <span className='ms-4 fs-6 text-danger'>{  JobPostForm.errors.experience}</span>
                         <input type="text" className='form-control mb-3' id='experience' onChange={JobPostForm.handleChange} value={JobPostForm.values.experience} />
                         
+                        <label htmlFor="skill">Enter Skill</label>
+                        <span className='ms-4 fs-6 text-danger'>{  JobPostForm.errors.skill}</span>
+                        <input type="text" className='form-control mb-3' id='skill' onChange={JobPostForm.handleChange} value={JobPostForm.values.skill} />
+
+                        <label htmlFor="education">Enter Education</label>
+                        <span className='ms-4 fs-6 text-danger'>{  JobPostForm.errors.education}</span>
+                        <input type="text" className='form-control mb-3' id='education' onChange={JobPostForm.handleChange} value={JobPostForm.values.education} />
+
+                        <label htmlFor="jobtype">Enter Job Type</label>
+                        <span className='ms-4 fs-6 text-danger'>{  JobPostForm.errors.jobtype}</span>
+                        <select className='form-control mb-3' id="jobtype" onChange={JobPostForm.handleChange}value={JobPostForm.values.jobtype}>
+                             <option >
+                                
+                            </option>
+                            <option >
+                                Full Time
+                            </option>
+                            <option >
+                                Part Time
+                            </option>
+                            <option >
+                                Work From Home
+                            </option>
+                        </select >
+
+                        <label htmlFor="benefits">Enter Benefits</label>
+                        <span className='ms-4 fs-6 text-danger'>{  JobPostForm.errors.benefits}</span>
+                        <input type="text" className='form-control mb-3' id='benefits' onChange={JobPostForm.handleChange} value={JobPostForm.values.benefits} />
+
                         <label htmlFor="description">Enter Description</label>
                         <span className='ms-4 fs-6 text-danger'>{  JobPostForm.errors.email}</span>
-                         <textarea id="description" className="form-control w-100  bg-white-subtle mb-3" onChange={JobPostForm.handleChange} value={JobPostForm.values.description}   ></textarea>
+                         <textarea id="description" className="form-control w-100  bg-white-subtle " rows="4" cols="50" onChange={JobPostForm.handleChange} value={JobPostForm.values.description}   ></textarea>
 
                         <button className='btn btn-primary w-100 mt-3'>Post Job</button>
 

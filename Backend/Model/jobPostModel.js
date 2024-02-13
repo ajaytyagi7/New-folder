@@ -6,7 +6,12 @@ const mySchema=new Schema({
     description:String,
     salary:String,
     address:String,
-    experience:String
+    experience:String,
+    jobtype:String,
+    benefits:String,
+    skill:String,
+    education:String
+
 });
 
 module.exports=model('job',mySchema)

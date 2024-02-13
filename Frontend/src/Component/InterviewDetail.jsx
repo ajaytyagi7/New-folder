@@ -24,13 +24,13 @@ const InterviewDetail = () => {
       if(interviewData !==null){
         return <div  style={{ overflow: 'hidden' }}>
           <div className='container-fluid row'>
-            <div className='card w-75 mx-auto mt-5 '>
+            <div className='card  mx-auto mt-5 '>
               <div className='col p-4'>
                 <div>
-                  <h5>{interviewData.title}</h5>
+                  <h5 className='fw-bold'>{interviewData.title}</h5>
                   <p>{interviewData.name}</p>
                   <p>{interviewData.experience}</p>
-                  <p>{interviewData.address}</p>
+                  <p><i class="fa-solid fa-location-dot"></i>{interviewData.address}</p>
                   <hr />
                   <button className='btn btn-primary float-end '>Apply Application</button>
                 </div>
@@ -39,9 +39,23 @@ const InterviewDetail = () => {
             <div className='card mx-auto w-75 mt-3 '>
               <div className='col p-3 '>
                 <div>
-                  <h4>Job Details</h4><hr />
+                  <h5>Job Details</h5><hr />
                   <h6 className='fw-bold'>Pay</h6>
-                  <div className='mx-3 bg-dark-subtle px-2 'style={{width:120}}>{interviewData.salary}</div>
+                  <div className='mx-3 bg-dark-subtle px-2 mb-4'style={{width:140}}>₹{interviewData.salary}</div>
+                  <h6 className='fw-bold'>Experience</h6>
+                  <div className='mx-3 bg-dark-subtle px-2 mb-4'style={{width:80}}>{interviewData.experience}</div>
+                  <h6 className='fw-bold'>Job Type</h6>
+                  <div className='mx-3 bg-dark-subtle px-2 mb-4'style={{width:80}}>{interviewData.jobtype}</div><hr />
+                  <h5 >Benefits</h5>
+                  <p>{interviewData.benefits}</p><hr />
+                  <h5>Job Required</h5>
+                  <h6 className='fw-bold'>Skill</h6>
+                  <div className='bg-darksubtle mx-3 mb-3'>{interviewData.skill}</div>
+                  <h6 className='fw-bold'>Education</h6>
+                  <div className='bg-darksubtle mx-3 '>{interviewData.education}</div><hr />
+
+                  <h5>Job Description</h5>
+                  <p>{interviewData.description}</p>
                 </div>
               </div>
             </div>
