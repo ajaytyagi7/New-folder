@@ -18,6 +18,24 @@ const ManageEmployeData = () => {
         fetchEmployeData();
     },[]);
 
+    const deleteEmployeData=async(id) =>{
+        const res=await fetch('http://localhost:4000/apply/delete/'+id,{
+            method:'DELETE',
+            headers:{
+                'Content-Type':'application/json'
+            }
+        });
+        const data=await res.json();
+        console.log(data);
+        fetchEmployeData();
+
+        if(res.status==200){
+            enqueueSnackbar('Deleted Successfully',{variant:'success'});
+        }else{
+                enqueueSnackbar('Some thing went wrong',{variant:'error'})
+            }
+    }
+
     const displayEmployeData=() =>{
         return <table className='table table-secondary'>
             <thead>
@@ -27,6 +45,7 @@ const ManageEmployeData = () => {
                     <th>Phone Number</th>
                     <th>Date Of Birth</th>
                     <th>Resume</th>
+                    <th>Delete Data</th>
                 </tr>
             </thead>
             <tbody>

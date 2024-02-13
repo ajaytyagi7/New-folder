@@ -14,6 +14,7 @@ import ListingJob from "./Component/ListingJob";
 import InterviewDetail from "./Component/InterviewDetail";
 import ManageInterviewData from "./Component/ManageInterviewData";
 import EmployeApply from "./Component/EmployeApply";
+import ManageEmployeData from "./Component/ManageEmployeData";
 import Contact from "./Component/Contact";
 import About from "./Component/About";
 import { CompanyProvider } from "./CompanyContext";
@@ -43,6 +44,7 @@ const App = () => {
               <Route path='InterviewDetail' element={<InterviewDetail />} />
               <Route path='ManageInterviewData' element={<ManageInterviewData />} />
               <Route path='EmployeApply' element={<EmployeApply />} />
+              <Route path='ManageEmployeData' element={<ManageEmployeData />} />
               <Route path='Contact' element={<Contact />} />
               <Route path='About' element={<About />} />
 

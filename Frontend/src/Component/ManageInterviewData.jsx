@@ -18,16 +18,22 @@ const ManageInterviewData = () => {
         fetchInterviewData();
     },[]);
 
-    const deleteInterviewData=async() =>{
-        console.log(id);
-            const res=await fetch('http://localhost:4000/job/delete/' +id,{ method:'Delete'});
-            console.log(res.status);
-
-            if(res.status===200){
-                enqueueSnackbar('Details Deleted Successfully',{variant:'success'});
-                fetchInterviewData();
+   const deleteInterviewData=async(id) =>{
+        const res=await fetch('http://localhost:4000/job/delete/'+id,{
+            method:'DELETE',
+            headers:{
+                'Content-Type':'application/json'
             }
-    }
+        });
+        const data=await res.json();
+        console.log(data);
+        fetchInterviewData();
+        if(res.status==200){
+            enqueueSnackbar('Deleted Successfully',{variant:'success'});
+        }else{
+                enqueueSnackbar('Some thing went wrong',{variant:'error'})
+            }
+   }
 
    
 

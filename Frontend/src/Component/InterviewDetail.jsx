@@ -30,7 +30,7 @@ const InterviewDetail = () => {
                   <h5 className='fw-bold'>{interviewData.title}</h5>
                   <p>{interviewData.name}</p>
                   <p>{interviewData.experience}</p>
-                  <p>{interviewData.address}</p>
+                  <p><i class="fa-solid fa-location-dot"></i> {interviewData.address}</p>
                   <hr />
                   <Link to={'/EmployeApply'}><button className='btn btn-primary float-end '>Apply Application</button></Link>
                 </div>
@@ -40,18 +40,18 @@ const InterviewDetail = () => {
               <div className='col p-3 '>
                 <div>
                   <h5>Job Details</h5><hr />
-                  <h6 className='fw-bold'>Pay</h6>
+                  <h6 className='fw-bold'><i class="fa-regular fa-money-bill"></i> Pay</h6>
                   <div className='mx-3 bg-dark-subtle px-2 mb-4'style={{width:140}}>₹{interviewData.salary}</div>
-                  <h6 className='fw-bold'>Experience</h6>
+                  <h6 className='fw-bold'><i class="fa-solid fa-briefcase"></i>Experience</h6>
                   <div className='mx-3 bg-dark-subtle px-2 mb-4'style={{width:80}}>{interviewData.experience}</div>
-                  <h6 className='fw-bold'>Job Type</h6>
+                  <h6 className='fw-bold'><i class="fa-solid fa-computer"></i> Job Type</h6>
                   <div className='mx-3 bg-dark-subtle px-2 mb-4'style={{width:80}}>{interviewData.jobtype}</div><hr />
                   <h5 >Benefits</h5>
                   <p>{interviewData.benefits}</p><hr />
                   <h5>Job Required</h5>
-                  <h6 className='fw-bold'>Skill</h6>
+                  <h6 className='fw-bold'><i class="fa-solid fa-kitchen-set"></i> Skill</h6>
                   <div className='bg-darksubtle mx-3 mb-3'>{interviewData.skill}</div>
-                  <h6 className='fw-bold'>Education</h6>
+                  <h6 className='fw-bold'><i class="fa-solid fa-school"></i> Education</h6>
                   <div className='bg-darksubtle mx-3 '>{interviewData.education}</div><hr />
 
                   <h5>Job Description</h5>
