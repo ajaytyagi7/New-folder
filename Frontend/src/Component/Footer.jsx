@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className='container-fluid bg-dark text-white'>
         <div className='row p-5 '>
-            <h3 className='fw-bold'>offBeatHire</h3>
+            <h3 className='fw-bold'>offBeatCampus</h3>
             <div className='col  bg-dark '>
                 <div className='card-body p-4 '>
                     <Link  className='text-white text-decoration-none'>About Us</Link><br />
