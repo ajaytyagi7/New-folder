@@ -8,7 +8,6 @@ import { SnackbarProvider } from "notistack";
 import CompanySignup from "./Component/CompanySignup";
 import CompanyLogin from "./Component/CompanyLogin";
 import Home from "./Component/Home";
-import CompanyDetalis from "./Component/CompanyDetalis";
 import JobPost from "./Component/JobPost";
 import ListingJob from "./Component/ListingJob";
 import InterviewDetail from "./Component/InterviewDetail";
@@ -18,6 +17,7 @@ import ManageEmployeData from "./Component/ManageEmployeData";
 import Contact from "./Component/Contact";
 import About from "./Component/About";
 import { CompanyProvider } from "./CompanyContext";
+import Footer from "./Component/Footer";
 
 const App = () => {
 
@@ -38,7 +38,6 @@ const App = () => {
               <Route path='Login' element={<Login />} />
               <Route path='CompanySignup' element={<CompanySignup />} />
               <Route path='CompanyLogin' element={<CompanyLogin />} />
-              <Route path='CompanyDetails' element={<CompanyDetalis />} />
               <Route path='JobPost' element={<JobPost />} />
               <Route path='ListingJob' element={<ListingJob />} />
               <Route path='InterviewDetail' element={<InterviewDetail />} />
@@ -50,6 +49,7 @@ const App = () => {
 
               <Route path='detail/:id' element={<InterviewDetail />} />
             </Routes>
+            <Footer></Footer>
           </CompanyProvider>
         </BrowserRouter>
       </SnackbarProvider>

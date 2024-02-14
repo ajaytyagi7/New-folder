@@ -176,8 +176,8 @@ const ListingJob = () => {
                   <div className='card p-3  bg-dark-subtle'>
                     <h4>{item.title}</h4>
                     <p>{item.name}</p>
-                    <p><i class="fa-solid fa-location-dot"></i>{item.address}</p>
-                    <h6>₹ {item.salary}</h6>
+                    <p><i class="fa-solid fa-location-dot"></i> {item.address}</p>
+                    <h6>₹{item.salary}</h6>
                     <div className='d-flex'>
                       <p>{item.experience}</p>
                       <p className='mx-4'>{item.jobtype}</p>

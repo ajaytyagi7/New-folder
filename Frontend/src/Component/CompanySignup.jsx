@@ -62,29 +62,30 @@ const CompanySignup = () => {
       }
       );
   return (
-    <div className='container-fluid company-signup-bg-img text-white'>
-        <div className='col-md-4 mx-auto py-5'>
-            <div className=''>
+    <div className='container-fluid bg-secondary '>
+        <div className='col-md-5 mx-auto py-3'>
+            <div className='card'>
                 <div className='card-body p-4'>
-                    <form onSubmit={CompanySignup.handleSubmit}>
+                    <form className='rounded p-4 bg-white ' onSubmit={CompanySignup.handleSubmit}>
                         <h1 className='text-center fw-bold'>Company Resgistration</h1>
                         <hr />
                         <span className='ms-4 fs-6 text-danger'>{ CompanySignup.touched.owner && CompanySignup.errors.owner}</span>
-                        <input type="text" className='form-control bg-secondary-subtle'  style={{borderRadius:50}} placeholder='Enter Owner Name' id='owner' onChange={CompanySignup.handleChange} value={CompanySignup.values.owner} />&nbsp;
+                        <input type="text" className='form-control  border border-secondary '  placeholder='Enter Owner Name' id='owner' onChange={CompanySignup.handleChange} value={CompanySignup.values.owner} />&nbsp;
 
                         <span className='ms-4 fs-6 text-danger'>{ CompanySignup.touched.name && CompanySignup.errors.name}</span>
-                        <input type="text" className='form-control bg-secondary-subtle'  style={{borderRadius:50}} placeholder='Enter Company Name' id='name' onChange={CompanySignup.handleChange} value={CompanySignup.values.name} />&nbsp;
+                        <input type="text" className='form-control  border border-secondary'  placeholder='Enter Company Name' id='name' onChange={CompanySignup.handleChange} value={CompanySignup.values.name} />&nbsp;
                         
                         <span className='ms-4 fs-6 text-danger'>{ CompanySignup.touched.email && CompanySignup.errors.email}</span>
-                        <input type="text" className='form-control bg-secondary-subtle'  style={{borderRadius:50}} placeholder='Enter Company Email' id='email' onChange={CompanySignup.handleChange} value={CompanySignup.values.email} />&nbsp;
+                        <input type="text" className='form-control  border border-secondary'  placeholder='Enter Company Email' id='email' onChange={CompanySignup.handleChange} value={CompanySignup.values.email} />&nbsp;
 
                         <span className='ms-4 fs-6 text-danger'>{ CompanySignup.touched.password && CompanySignup.errors.password}</span>
-                        <input type="text" className='form-control bg-secondary-subtle'  style={{borderRadius:50}} placeholder='Enter Password ' id='password' onChange={CompanySignup.handleChange} value={CompanySignup.values.password} />&nbsp;
+                        <input type="password" className='form-control  border border-secondary'  placeholder='Enter Password ' id='password' onChange={CompanySignup.handleChange} value={CompanySignup.values.password} />&nbsp;
 
                         <span className='ms-4 fs-6 text-danger'>{ CompanySignup.touched.confirm && CompanySignup.errors.confirm}</span>
-                        <input type="text" className='form-control bg-secondary-subtle'  style={{borderRadius:50}} placeholder='Enter Confirm Password' id='confirm' onChange={CompanySignup.handleChange} value={CompanySignup.values.confirm} />&nbsp;
+                        <input type="password" className='form-control  border border-secondary'  placeholder='Enter Confirm Password' id='confirm' onChange={CompanySignup.handleChange} value={CompanySignup.values.confirm} />&nbsp;
 
-                        <button className='btn btn-primary w-100 mb-2'  style={{borderRadius:50}}>Sign Up</button>
+                        <button className='btn btn-primary w-100 mb-2' >Sign Up</button>
+                        <Link className='text-decoration-none'style={{marginLeft:140}} to={'/CompanyLogin'}>All Ready Have a Register ? Log In</Link>
 
                     </form>
 
