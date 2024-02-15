@@ -69,7 +69,7 @@ const CompanyLogin = () => {
                     <input type="text" className='form-control  border border-secondary'  placeholder='Enter Your Email' id='email' onChange={CompanyLoginForm.handleChange} value={CompanyLoginForm.values.email} />&nbsp;
                     
                     <span className='ms-4 fs-6 text-danger'>{  CompanyLoginForm.errors.password}</span>
-                    <input type="password"  className='form-control border border-secondary' placeholder='Enter Your Password' id='password'  onChange={CompanyLoginForm.handleChange} value={CompanyLoginForm.values.password}/>&nbsp;
+                    <input type="text"  className='form-control border border-secondary' placeholder='Enter Your Password' id='password'  onChange={CompanyLoginForm.handleChange} value={CompanyLoginForm.values.password}/>&nbsp;
                     
                     <button className='btn btn-primary w-100 mb-3'>Login</button>&nbsp;
                     <Link className=" text-decoration-none  text-dark" >Don't Have an Account ?<p className='text-primary fw-bold '>Register Sign Up</p></Link>

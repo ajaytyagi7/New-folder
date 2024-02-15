@@ -26,10 +26,10 @@ const Home = () => {
     <div className='container-fluid'>
         <header className='text-white header row p-5'>
             <div className='col'> 
-              <h1 className='  fw-bold '>Your Dream <br />
+              <h1 className='  fw-bold 'style={{fontSize:120}}>Your Dream <br />
                Job is Waiting</h1>
                </div>
-              <div className='row mt-4'>
+              <div className='row '>
                 <div className='col'>
                <input type="text" className='form-control taxt-dark  ' placeholder='Job title or Company name 'ref={searchRef} />
                </div>
@@ -40,10 +40,10 @@ const Home = () => {
               <button className='btn btn-success' onClick={searchProduct}>Search </button>
               </div>
               </div>
+        </header>
               
                
             
-        </header>
 
         <div className='container-fluid '>
             <div className='text-center  bg-secondary-subtle p-5 '>

@@ -65,6 +65,14 @@ const Navbar = () => {
              
 
               {showCompanyOptions()}
+              <li className="nav-item">
+                <NavLink className="nav-link" to="">
+                  <div>
+                 <Link className='text-decoration-none ' to={'/CompanySignup'}> <button className='btn btn-success float-end'>Hire Employe </button></Link>
+                   
+                    </div>
+                </NavLink>
+              </li>
 
             </ul>
 
