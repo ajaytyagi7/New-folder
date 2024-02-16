@@ -52,11 +52,11 @@ const contactSchema=Yup.object().shape({
     });
 
   return (
-    <div className='container-fluid contact-bg-img '>
-        <form className='w-50  mx-auto ' onSubmit={contactForm.handleSubmit}>
+    <div className='container-fluid  bg-secondary'>
+        <form className='w-50  mx-auto  mt-4 ' onSubmit={contactForm.handleSubmit}>
             <div className='col-md-8 mx-auto py-5'>
                 <div className='card-body p-3'>
-                    <h1 className='text-center text-white fw-bold'>Contact Us</h1> <hr className='text-white' />
+                    <h1 className='text-center  fw-bold'>Contact Us</h1> <hr className='text-white' />
                      <span className='ms-4 fs-6 text-danger'>{  contactForm.errors.name}</span>
                     <input type="text" id='name' className='form-control ' placeholder='Enter Your Name' onChange={contactForm.handleChange} value={contactForm.values.name} />
                     <span className='ms-4 fs-6 text-danger'>{  contactForm.errors.email}</span>
