@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
     <div className='container-fluid bg-dark text-white'>
-        <div className='row  p-5 '>
+        <div className='row  p-3 '>
             <h3 className='fw-bold'>offBeatCampus</h3>
             <div className='col  bg-dark '>
                 <div className='card-body p-4 '>
