@@ -44,5 +44,10 @@
     background-size: cover;
     height:90vh;
 }
-
+ .home-card{
+    transition: 2s;
+}
+.home-card:hover{
+    transform: scale(1.5);
+}
 
