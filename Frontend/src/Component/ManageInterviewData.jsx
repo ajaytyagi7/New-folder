@@ -4,9 +4,15 @@ import React, { useEffect,useState } from 'react'
 const ManageInterviewData = () => {
 
     const [joblist, setJoblist] = useState([])
+    const [currentCompany, setCurrentCompany] = useState(JSON.parse(sessionStorage.getItem('company')));
 
     const fetchInterviewData=async() =>{
-        const res=await fetch(`${import.meta.env.VITE_API_URL}/job/getall`)
+        const res=await fetch(`${import.meta.env.VITE_API_URL}/job/getbycompany/`+currentCompany._id, {
+            method: 'GET',
+            headers: {
+                'Content-type': 'application/json'
+            }
+        });
         console.log(res.status);
 
         const data= await res.json();

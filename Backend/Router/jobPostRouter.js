@@ -21,7 +21,7 @@ router.post('/add',(req,res) =>{
 router.get('/getall',(req,res) => {
 
 
-    Model.find()
+    Model.find().populate('company')
     .then((result) => {
         res.json(result)
     }).catch((err) => {
@@ -31,7 +31,7 @@ router.get('/getall',(req,res) => {
 
 router.get('/getbyid/:id',(req,res) =>{
     
-    Model.findById(req.params.id)
+    Model.findById(req.params.id).populate('company')
     .then((result) => {
         res.json(result)
     }).catch((err) => {
@@ -39,8 +39,10 @@ router.get('/getbyid/:id',(req,res) =>{
     });
 });
 
-router.post('/authenticate',(req,res) =>{
-    Model.findOne(req.body)
+
+
+router.post('/getbycompany/:company',(req,res) =>{
+    Model.find({company : req.params.company})
     .then((result) => {
         console.log(result);
         if(result) res.json(result)

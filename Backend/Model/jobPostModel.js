@@ -1,4 +1,4 @@
-const {Schema,model} = require('../connection');
+const {Schema,model, Types} = require('../connection');
 
 const mySchema=new Schema({
     title:String,
@@ -10,7 +10,9 @@ const mySchema=new Schema({
     jobtype:String,
     benefits:String,
     skill:String,
-    education:String
+    education:String,
+    company: { type : Types.ObjectId, ref: 'company'},
+    createdAt: Date
 
 });
 

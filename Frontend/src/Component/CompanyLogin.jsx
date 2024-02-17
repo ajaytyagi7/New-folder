@@ -31,7 +31,7 @@ const CompanyLogin = () => {
 
     onSubmit:async(values) =>{
       console.log(values);
-      const res=await fetch(`${import.meta.env.VITE_API_URL}/user/authenticate`,{
+      const res=await fetch(`${import.meta.env.VITE_API_URL}/company/authenticate`,{
         method:'POST',
         body:JSON.stringify(values),
         headers:{

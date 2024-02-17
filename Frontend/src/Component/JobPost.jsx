@@ -1,17 +1,19 @@
 import { useFormik } from 'formik'
 import { enqueueSnackbar } from 'notistack'
-import React from 'react'
+import React, { useState } from 'react'
 import * as Yup from 'yup';
 
 const JobPostSchema=Yup.object().shape({
     title:Yup.string().required('Title is Require'),
-    name:Yup.string().required('Name is require')
+   
 });
 
 
 
 
 const JobPost = () => {
+
+    const [currentCompany, setCurrentCompany] = useState(JSON.parse(sessionStorage.getItem('company')));
 
     const JobPostForm=useFormik({
         initialValues:{
@@ -20,7 +22,8 @@ const JobPost = () => {
             address:'',
             salary:'',
             description:'',
-            experience:''
+            experience:'',
+            company:currentCompany._id,
 
         },
 
