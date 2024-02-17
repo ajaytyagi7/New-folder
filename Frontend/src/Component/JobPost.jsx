@@ -26,7 +26,7 @@ const JobPost = () => {
 
         onSubmit:async(value)=>{
             console.log(value)
-            const res=await fetch('http://localhost:4000/job/add',{
+            const res=await fetch(`${import.meta.env.VITE_API_URL}/job/add`,{
                 method:'POST',
                 body:JSON.stringify(value),
                 headers:{

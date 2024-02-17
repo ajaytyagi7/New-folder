@@ -5,7 +5,7 @@ const ManageEmployeData = () => {
     const [interviewList, setInterviewList] = useState([])
 
     const fetchEmployeData=async() =>{
-        const res=await fetch('http://localhost:4000/apply/getall/')
+        const res=await fetch(`${import.meta.env.VITE_API_URL}/apply/getall/`)
         console.log(res.status);
 
         const data= await res.json();
@@ -19,7 +19,7 @@ const ManageEmployeData = () => {
     },[]);
 
     const deleteEmployeData=async(id) =>{
-        const res=await fetch('http://localhost:4000/apply/delete/'+id,{
+        const res=await fetch(`${import.meta.env.VITE_API_URL}/apply/delete/`+id,{
             method:'DELETE',
             headers:{
                 'Content-Type':'application/json'

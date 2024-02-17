@@ -34,13 +34,14 @@ const Signup = () => {
     onSubmit: async (values, { setSubmitting }) => {
       console.log(values);
 
-      const res = await fetch('http://localhost:4000/user/add', {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/user/add`, {
         method: 'POST',
         body: JSON.stringify(values),
         headers: {
           'content-Type': 'application/json'
         }
       });
+      //const res=await fetch(`/user/add`,{)
 
       setSubmitting(false)
       console.log(res.status);

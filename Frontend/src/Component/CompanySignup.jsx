@@ -36,7 +36,7 @@ const CompanySignup = () => {
         onSubmit: async (values, { setSubmitting }) => {
           console.log(values);
     
-          const res = await fetch('http://localhost:4000/company/add', {
+          const res = await fetch(`${import.meta.env.VITE_API_URL}/company/add`, {
             method: 'POST',
             body: JSON.stringify(values),
             headers: {

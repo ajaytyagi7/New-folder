@@ -17,7 +17,7 @@ const EmployeApply = () => {
         onSubmit:async(values,{setSubmitting})=>{
             console.log(values);
 
-            const res=await fetch('http://localhost:4000/apply/add',{
+            const res=await fetch(`${import.meta.env.VITE_API_URL}/apply/add`,{
                 method: 'POST',
                 body: JSON.stringify(values),
                 headers: {

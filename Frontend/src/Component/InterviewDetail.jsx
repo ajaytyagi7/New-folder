@@ -8,7 +8,7 @@ const InterviewDetail = () => {
     const [interviewData, setInterviewData] = useState(null)
 
     const getInterviewData=async() =>{
-      const res= await fetch('http://localhost:4000/job/getbyid/'+id);
+      const res= await fetch(`${import.meta.env.VITE_API_URL}/job/getbyid/`+id);
       console.log(res.status);
 
       const data=await res.json();

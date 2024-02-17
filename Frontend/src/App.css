@@ -48,6 +48,6 @@
     transition: 2s;
 }
 .home-card:hover{
-    transform: scale(1.5);
+    transform: scale(0.8);
 }
 
