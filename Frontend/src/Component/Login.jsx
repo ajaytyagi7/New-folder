@@ -60,7 +60,7 @@ const Login = () => {
 
   
   return (
-    <div className='container-fluid bg-secondary py-5'>
+    <div className='container-fluid company-login-bg-img '>
         <div className='col-md-4 mx-auto py-4'>
             <div className=' mt-5'>
                 <div className='card-body p-4 mt-2'>

@@ -52,7 +52,7 @@ const contactSchema=Yup.object().shape({
     });
 
   return (
-    <div className='container-fluid  bg-secondary'>
+    <div className='container-fluid contact-bg-img text-white'>
         <form className='w-50  mx-auto  mt-4 ' onSubmit={contactForm.handleSubmit}>
             <div className='col-md-8 mx-auto py-5'>
                 <div className='card-body p-3'>

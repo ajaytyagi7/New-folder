@@ -52,7 +52,7 @@ const InterviewDetail = () => {
                   <h6 className='fw-bold'><i class="fa-solid fa-kitchen-set"></i> Skill</h6>
                   <div className='bg-darksubtle mx-3 mb-3'>{interviewData.skill}</div>
                   <h6 className='fw-bold'><i class="fa-solid fa-school"></i> Education</h6>
-                  <div className='bg-darksubtle mx-3 '>{interviewData.company.name}</div><hr />
+                  <div className='bg-darksubtle mx-3 '>{interviewData.education}</div><hr />
 
                   <h5>Job Description</h5>
                   <p>{interviewData.description}</p>

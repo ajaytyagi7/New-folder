@@ -67,7 +67,7 @@ const Signup = () => {
 
    
   return (
-    <div className='container-fluid  bg-secondary'>
+    <div className='container-fluid  employe-signup-bg-img'>
         <div className='col-md-4 mx-auto py-3 '>
             <div className=' rounded-3'>
                 <div className='card-body p-4'>

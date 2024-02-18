@@ -15,7 +15,7 @@
     padding: 20px;
 }
 .contact-bg-img{
-    background-image: url(https://img.freepik.com/premium-photo/email-marketing-newsletter-concept-contact-us-by-newsletter-email-protect-your-personal-information-from-spam-mail-concept-scheme-direct-sales-business-list-clients-mailing_150455-17438.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais);
+    background-image: url(https://img.freepik.com/premium-photo/abstract-background-molecules-technology-with-polygonal-shapes-connecting-dots-lines-connection-structure-big-data-visualization_7247-3244.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais);
     background-size: cover;
     height:90vh;
 }
@@ -30,17 +30,17 @@
     height:90vh;
 }
 .company-login-bg-img{
-    background-image: url(https://img.freepik.com/premium-photo/christmas-lights-bokeh_127657-16464.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais);
+    background-image: url(https://img.freepik.com/premium-photo/navy-blue-lines-abstract-background-with-free-space-blue-copy-space-digital-background_551880-383.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais);
     background-size: cover;
     height:90vh;
 }
 .employe-signup-bg-img{
-    background-image: url(https://img.freepik.com/free-photo/colorful-lights-garland_23-2147785804.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais);
+    background-image: url(https://img.freepik.com/free-photo/gradient-dark-blue-futuristic-digital-background_53876-102619.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais);
     background-size: cover;
     height:90vh;
 }
 .company-signup-bg-img{
-    background-image: url(https://img.freepik.com/free-photo/degrade-blurred-background-with-faded-lines_23-2148231693.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais);
+    background-image: url(https://img.freepik.com/free-photo/dark-geometric-background-with-copy-space_24972-1816.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais);
     background-size: cover;
     height:90vh;
 }
@@ -53,4 +53,7 @@
 
 .brand-icon{
     width: 200px;
+}
+.company-name{
+    width: 150px;
 }

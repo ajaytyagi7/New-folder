@@ -62,7 +62,7 @@ const CompanySignup = () => {
       }
       );
   return (
-    <div className='container-fluid bg-secondary '>
+    <div className='container-fluid company-signup-bg-img '>
         <div className='col-md-5 mx-auto py-3'>
             <div className='card'>
                 <div className='card-body p-4'>
