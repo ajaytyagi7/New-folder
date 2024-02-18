@@ -1,3 +1,4 @@
+import MDEditor from '@uiw/react-md-editor/nohighlight';
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom';
 
@@ -55,7 +56,7 @@ const InterviewDetail = () => {
                   <div className='bg-darksubtle mx-3 '>{interviewData.education}</div><hr />
 
                   <h5>Job Description</h5>
-                  <p>{interviewData.description}</p>
+                  <MDEditor.Markdown className='bg-secondary-subtle' source={interviewData.description} style={{ whiteSpace: 'pre-wrap' }} />
                 </div>
               </div>
             </div>
