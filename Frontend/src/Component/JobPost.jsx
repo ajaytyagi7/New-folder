@@ -11,7 +11,9 @@ const JobPostSchema=Yup.object().shape({
 
 
 
+
 const JobPost = () => {
+
 
     const [currentCompany, setCurrentCompany] = useState(JSON.parse(sessionStorage.getItem('company')));
 
@@ -53,7 +55,12 @@ const JobPost = () => {
         validationSchema:JobPostSchema
     });
   return (
-    <div className='container-fluid  bg-secondary'>
+    <div className='container-fluid   row'>
+      
+
+        <div className='col-md-6 mx-auto py-5'>
+            <img src="" alt="" />
+        </div>
         <div className='col-md-6 mx-auto py-5'>
             <div className='card'>
                 <div className='card-body'>
@@ -110,7 +117,8 @@ const JobPost = () => {
 
                         <label htmlFor="description">Enter Description</label>
                         <span className='ms-4 fs-6 text-danger'>{  JobPostForm.errors.email}</span>
-                         <textarea id="description" className="form-control w-100  bg-white-subtle  border border-secondary" rows="4" cols="50" onChange={JobPostForm.handleChange} value={JobPostForm.values.description}   ></textarea>
+                         <textarea  id="description" className="form-control w-100  bg-white-subtle  border border-secondary" rows="4" cols="50" onChange={JobPostForm.handleChange} value={JobPostForm.values.description}   ></textarea>
+
 
                         <button className='btn btn-primary w-100 mt-5'>Post Job</button>
 

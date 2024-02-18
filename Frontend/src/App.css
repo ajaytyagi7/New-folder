@@ -57,3 +57,9 @@
 .company-name{
     width: 150px;
 }
+
+.apply-bg-img{
+    background-image: url(https://img.freepik.com/free-vector/blue-copy-space-digital-background_23-2148821698.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=sph);
+    background-size: cover;
+    height:90vh;
+}

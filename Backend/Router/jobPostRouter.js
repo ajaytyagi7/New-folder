@@ -41,7 +41,7 @@ router.get('/getbyid/:id',(req,res) =>{
 
 
 
-router.post('/getbycompany/:company',(req,res) =>{
+router.get('/getbycompany/:company',(req,res) =>{
     Model.find({company : req.params.company})
     .then((result) => {
         console.log(result);

@@ -24,11 +24,11 @@ const InterviewDetail = () => {
       if(interviewData !==null){
         return <div  style={{ overflow: 'hidden' }}>
           <div className='container-fluid row'>
-            <div className='card  mx-auto mt-5 '>
-              <div className='col p-4'>
+            <div className='card bg-dark-subtle mx-auto mt-5 '>
+              <div className='col-md-12 p-4'>
                 <div>
                   <h5 className='fw-bold'>{interviewData.title}</h5>
-                  <p>{interviewData.name}</p>
+                  <p>{interviewData.company.name}</p>
                   <p>{interviewData.experience}</p>
                   <p><i class="fa-solid fa-location-dot"></i> {interviewData.address}</p>
                   <hr />
@@ -36,8 +36,8 @@ const InterviewDetail = () => {
                 </div>
               </div>
             </div>
-            <div className='card mx-auto w-75 mt-3 '>
-              <div className='col p-3 '>
+            <div className='card bg-secondary-subtle mx-auto w-75 mt-3 mb-4 '>
+              <div className='col-md-12 p-3 '>
                 <div>
                   <h5>Job Details</h5><hr />
                   <h6 className='fw-bold'><i class="fa-regular fa-money-bill"></i> Pay</h6>
