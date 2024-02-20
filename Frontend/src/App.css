@@ -20,14 +20,14 @@
     height:90vh;
 }
 .jobpost-bg-img{
-    background-image: url(https://img.freepik.com/free-photo/abstract-textured-backgound_1258-30516.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais);
+    background-image: url();
     background-size: cover;
     height:100vh;
 }
 .employe-login-bg-img{
-    background-image: url(https://img.freepik.com/free-photo/close-up-lights-red_23-2147798916.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais);
+    background-image: url(https://img.freepik.com/premium-photo/blue-modern-futuristic-technology-background-16_769134-472.jpg?w=1060);
     background-size: cover;
-    height:90vh;
+    height:100vh;
 }
 .company-login-bg-img{
     background-image: url(https://img.freepik.com/premium-photo/navy-blue-lines-abstract-background-with-free-space-blue-copy-space-digital-background_551880-383.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais);
@@ -35,9 +35,10 @@
     height:90vh;
 }
 .employe-signup-bg-img{
-    background-image: url(https://img.freepik.com/free-photo/gradient-dark-blue-futuristic-digital-background_53876-102619.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais);
+    background-image: url(https://img.freepik.com/free-photo/3d-illustration-standing-woman-3d-render-design_460848-7433.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais);
     background-size: cover;
-    height:90vh;
+    height:100vh;
+   
 }
 .company-signup-bg-img{
     background-image: url(https://img.freepik.com/free-photo/dark-geometric-background-with-copy-space_24972-1816.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais);

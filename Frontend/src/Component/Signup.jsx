@@ -67,11 +67,13 @@ const Signup = () => {
 
    
   return (
-    <div className='container-fluid  employe-signup-bg-img'>
-        <div className='col-md-4 mx-auto py-3 '>
+    <div className='container-fluid employe-signup-bg-img '>
+      <div className='row'>
+              
+        <div className='col-md-4 mx-auto  py-3 '>
             <div className=' rounded-3'>
                 <div className='card-body p-4'>
-                    <form className='bg-white p-4 rounded' onSubmit={signupForm.handleSubmit}  >
+                    <form className='bg-white p-4 rounded ' onSubmit={signupForm.handleSubmit}  >
                         <h1 className='text-center fw-bold'>Create Account</h1>
                         <hr />
                         <span className='ms-4 fs-6 text-danger'>{ signupForm.touched.name && signupForm.errors.name}</span>
@@ -93,12 +95,12 @@ const Signup = () => {
                         <Link to={'/Login'} className='text-decoration-none  ' style={{marginLeft:100 }}>Already Have a Register ? Log In</Link>
                     </form>
                 </div>
-                <div>
-                  <img src="" alt="" />
-                </div>
+               
 
             </div>
 
+        </div>
+        
         </div>
     </div>
   )
