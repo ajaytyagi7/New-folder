@@ -65,16 +65,17 @@ const Navbar = () => {
             </ul>
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
+                <NavLink className="nav-link " to="/Login">
+                 <button className='p-1'>Login</button>
+                </NavLink>
+              </li>
+
+            <li className="nav-item">
                 <NavLink className="nav-link" to="/Signup">
                   <button className='btn btn-primary'>Signup</button>
                 </NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/Login">
-                 <button className='btn btn-info'>Login</button>
-                </NavLink>
-              </li>
-
+             
              
 
               

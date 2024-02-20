@@ -125,7 +125,7 @@ const ListingJob = () => {
     <div className='container'>
       <div className='d-flex mt-3 w-50' style={{ position: 'relative', left: 400 }}>
         <input type="text" className='form-control' placeholder='Search job....' />
-        <button className='btn btn-success' onPointerLeaveCapture={searchJob}>Search</button>
+        <button className='btn btn-primary' onPointerLeaveCapture={searchJob}>Search</button>
       </div>
       <div className='container-fluid'>
         <div className='row'>
@@ -169,7 +169,7 @@ const ListingJob = () => {
             </div>
           </div>
 
-          <div className='col-md-9 mt-3'>
+          <div className='col-md-9 mt-3 mb-5'>
             <div className='row gy-4'>
               {joblist.map((item) => {
                 return (<div className='col-md-9  '>

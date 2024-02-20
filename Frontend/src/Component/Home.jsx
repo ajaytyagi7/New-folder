@@ -19,7 +19,14 @@ const Home = () => {
     const filterData = [].filter((job) => {
       return job.name.toLowerCase().includes(searchRef.current.value.toLowerCase());
     });
-    console.log(searchProduct)
+    
+    setjobList(filterData);
+  }
+  const searchLocation = () => {
+    const filterData = [].filter((job) => {
+      return job.name.toLowerCase().includes(searchRef.current.value.toLowerCase());
+    });
+    
     setjobList(filterData);
   }
   return (
@@ -34,10 +41,10 @@ const Home = () => {
             <input type="text" className='form-control taxt-dark  ' placeholder='Job title or Company name ' ref={searchRef} />
           </div>
           <div className='col-md-4'>
-            <input type="text" className='form-control taxt-dark ' placeholder='City or Region ' />
+            <input type="text" className='form-control taxt-dark ' placeholder='City or Region '  ref={searchRef}/>
           </div>
           <div className='col-md-4'>
-            <button className='btn btn-success' onClick={searchProduct}>Search </button>
+            <button className='btn btn-success' onClick={searchProduct} onClickCapture={searchLocation}>Search </button>
           </div>
         </div>
       </header>
