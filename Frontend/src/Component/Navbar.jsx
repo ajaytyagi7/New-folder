@@ -1,10 +1,12 @@
 import React from 'react'
 import { NavLink, Link } from "react-router-dom";
 import useCompanyContext from '../CompanyContext';
+import useUserContext from '../UserContext';
 
 const Navbar = () => {
 
   const { companyLoggedin, logout } = useCompanyContext();
+  const {isLoggedIn} = useUserContext();
 
   const showCompanyOptions = () => {
     if (companyLoggedin) {
@@ -64,7 +66,13 @@ const Navbar = () => {
 
             </ul>
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li className="nav-item">
+              {isLoggedIn ?
+               <li className="nav-item">
+               <NavLink className="nav-link " to="/Logout">
+                <button className='p-1'>Logout</button>
+               </NavLink>
+             </li>:<>
+             <li className="nav-item">
                 <NavLink className="nav-link " to="/Login">
                  <button className='p-1'>Login</button>
                 </NavLink>
@@ -75,6 +83,10 @@ const Navbar = () => {
                   <button className='btn btn-primary'>Signup</button>
                 </NavLink>
               </li>
+             </>
+             }
+           
+           
              
              
 

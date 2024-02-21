@@ -16,6 +16,9 @@ export const UserProvider = ({ childern }) => {
         enqueueSnackbar('Loged Out Successfully ', { variant: 'success' });
         setuserloggedIn(false);
     }
+
+    
+
     return <UserContext.Provider value={{ currentUser, setCurrentUser, userloggedIn, setuserloggedIn, logout }}>
         {childern}
     </UserContext.Provider>

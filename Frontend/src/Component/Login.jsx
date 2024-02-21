@@ -64,17 +64,19 @@ const Login = () => {
         <div className='col-md-4 mx-auto py-4'>
             <div className=' mt-5'>
                 <div className='card-body p-4 mt-2'>
-                   <form className='rounded p-4 bg-white' onSubmit={loginForm.handleSubmit}>
+                   <form className='rounded p-4 bg-white shadow' onSubmit={loginForm.handleSubmit}>
                     <h1 className='text-center fw-bold'>Login</h1>
                    <hr />
                     <span className='ms-4 fs-6 text-danger'>{  loginForm.errors.email}</span>
-                    <input type="text" className='form-control border border-secondary' placeholder='Enter Your Email' id='email' onChange={loginForm.handleChange} value={loginForm.values.email} />&nbsp;
+                    <input type="text" className='form-control border border-secondary' placeholder=' Email Address' id='email' onChange={loginForm.handleChange} value={loginForm.values.email} />&nbsp;
                     
                     <span className='ms-4 fs-6 text-danger'>{  loginForm.errors.password}</span>
-                    <input type="password"  className='form-control border border-secondary' placeholder='Enter Your Password' id='password'  onChange={loginForm.handleChange} value={loginForm.values.password}/>&nbsp;
+                    <input type="password"  className='form-control border border-secondary' placeholder=' Password' id='password'  onChange={loginForm.handleChange} value={loginForm.values.password}/>&nbsp;
                     
                     <button className='btn btn-primary w-100'>Login</button>&nbsp;
-                    <Link to={'/'} className=" text-decoration-none text-dark "> Don't Have an Account ?<p className='text-primary fw-bold '>Register Sign Up</p></Link>
+                    <Link className='text-decoration-none'>Forget Password</Link>
+
+                    <p>Don't Have an Account ? <Link to={'/'} className=" text-decoration-none  ">Signup</Link></p>
 
                     
                     </form> 

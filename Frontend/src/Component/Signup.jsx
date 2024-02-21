@@ -70,29 +70,29 @@ const Signup = () => {
     <div className='container-fluid employe-signup-bg-img '>
       <div className='row'>
               
-        <div className='col-md-4 mx-auto  py-3 '>
+        <div className='col-md-4 mx-auto  py-2 '>
             <div className=' rounded-3'>
                 <div className='card-body p-4'>
-                    <form className='bg-white p-4 rounded ' onSubmit={signupForm.handleSubmit}  >
+                    <form className='bg-white p-3 rounded shadow' onSubmit={signupForm.handleSubmit}  >
                         <h1 className='text-center fw-bold'>Create Account</h1>
                         <hr />
                         <span className='ms-4 fs-6 text-danger'>{ signupForm.touched.name && signupForm.errors.name}</span>
-                        <input type="text" className='form-control border border-secondary'  style={{}} placeholder='Enter Your Name' id='name' onChange={signupForm.handleChange} value={signupForm.values.name}/>&nbsp;
+                        <input type="text" className='form-control border border-secondary'  style={{}} placeholder='userName' id='name' onChange={signupForm.handleChange} value={signupForm.values.name}/>&nbsp;
 
                         <span className='ms-4 fs-6 text-danger'>{ signupForm.touched.email && signupForm.errors.email}</span>
-                         <input type="text" className='form-control border border-secondary'   placeholder='Enter Your Email' id='email'onChange={signupForm.handleChange} value={signupForm.values.email} />&nbsp;
+                         <input type="text" className='form-control border border-secondary'   placeholder=' Email Address' id='email'onChange={signupForm.handleChange} value={signupForm.values.email} />&nbsp;
 
                          <span className='ms-4 fs-6 text-danger'>{ signupForm.touched.password && signupForm.errors.password}</span>
-                        <input type="password" className='form-control border border-secondary'   placeholder='Enter Password' id='password' onChange={signupForm.handleChange} value={signupForm.values.password}/>&nbsp;
+                        <input type="password" className='form-control border border-secondary'   placeholder='Password' id='password' onChange={signupForm.handleChange} value={signupForm.values.password}/>&nbsp;
 
                         <span className='ms-4 fs-6 text-danger'>{ signupForm.touched.confirm && signupForm.errors.confirm}</span>
-                        <input type="password" className='form-control border border-secondary'   placeholder='Enter Confirm Password' id='confirm' onChange={signupForm.handleChange} value={signupForm.values.confirm}/>&nbsp;
+                        <input type="password" className='form-control border border-secondary'   placeholder='Confirm Password' id='confirm' onChange={signupForm.handleChange} value={signupForm.values.confirm}/>&nbsp;
 
                         <button className='btn btn-primary mt-3 w-100'  >Sign Up</button>&nbsp;
 
                         <button className='btn btn-light w-100'  >Sign Up With Google</button>
                         
-                        <Link to={'/Login'} className='text-decoration-none  ' style={{marginLeft:100 }}>Already Have a Register ? Log In</Link>
+                       <p> Already Have a Register ?<Link to={'/Login'} className='text-decoration-none ' > Log In</Link></p>
                     </form>
                 </div>
                

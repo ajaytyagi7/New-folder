@@ -18,6 +18,7 @@ import Contact from "./Component/Contact";
 import About from "./Component/About";
 import { CompanyProvider } from "./CompanyContext";
 import Footer from "./Component/Footer";
+import Logout from "./Component/Logout";
 
 const App = () => {
 
@@ -46,6 +47,8 @@ const App = () => {
               <Route path='ManageEmployeData' element={<ManageEmployeData />} />
               <Route path='Contact' element={<Contact />} />
               <Route path='About' element={<About />} />
+              <Route path='Logout' element={<Logout />} />
+
 
               <Route path='detail/:id' element={<InterviewDetail />} />
             </Routes>

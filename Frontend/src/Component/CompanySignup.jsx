@@ -70,22 +70,22 @@ const CompanySignup = () => {
                         <h1 className='text-center fw-bold'>Company Resgistration</h1>
                         <hr />
                         <span className='ms-4 fs-6 text-danger'>{ CompanySignup.touched.owner && CompanySignup.errors.owner}</span>
-                        <input type="text" className='form-control  border border-secondary '  placeholder='Enter Owner Name' id='owner' onChange={CompanySignup.handleChange} value={CompanySignup.values.owner} />&nbsp;
+                        <input type="text" className='form-control  border border-secondary '  placeholder=' Owner Name' id='owner' onChange={CompanySignup.handleChange} value={CompanySignup.values.owner} />&nbsp;
 
                         <span className='ms-4 fs-6 text-danger'>{ CompanySignup.touched.name && CompanySignup.errors.name}</span>
-                        <input type="text" className='form-control  border border-secondary'  placeholder='Enter Company Name' id='name' onChange={CompanySignup.handleChange} value={CompanySignup.values.name} />&nbsp;
+                        <input type="text" className='form-control  border border-secondary'  placeholder=' Company Name' id='name' onChange={CompanySignup.handleChange} value={CompanySignup.values.name} />&nbsp;
                         
                         <span className='ms-4 fs-6 text-danger'>{ CompanySignup.touched.email && CompanySignup.errors.email}</span>
-                        <input type="text" className='form-control  border border-secondary'  placeholder='Enter Company Email' id='email' onChange={CompanySignup.handleChange} value={CompanySignup.values.email} />&nbsp;
+                        <input type="text" className='form-control  border border-secondary'  placeholder='  Email Address' id='email' onChange={CompanySignup.handleChange} value={CompanySignup.values.email} />&nbsp;
 
                         <span className='ms-4 fs-6 text-danger'>{ CompanySignup.touched.password && CompanySignup.errors.password}</span>
-                        <input type="password" className='form-control  border border-secondary'  placeholder='Enter Password ' id='password' onChange={CompanySignup.handleChange} value={CompanySignup.values.password} />&nbsp;
+                        <input type="password" className='form-control  border border-secondary'  placeholder=' Password ' id='password' onChange={CompanySignup.handleChange} value={CompanySignup.values.password} />&nbsp;
 
                         <span className='ms-4 fs-6 text-danger'>{ CompanySignup.touched.confirm && CompanySignup.errors.confirm}</span>
-                        <input type="password" className='form-control  border border-secondary'  placeholder='Enter Confirm Password' id='confirm' onChange={CompanySignup.handleChange} value={CompanySignup.values.confirm} />&nbsp;
+                        <input type="password" className='form-control  border border-secondary'  placeholder=' Confirm Password' id='confirm' onChange={CompanySignup.handleChange} value={CompanySignup.values.confirm} />&nbsp;
 
                         <button className='btn btn-primary w-100 mb-2' >Sign Up</button>
-                        <Link className='text-decoration-none'style={{marginLeft:140}} to={'/CompanyLogin'}>All Ready Have a Register ? Log In</Link>
+                       <p>All Ready Have a Register ? <Link className='text-decoration-none' to={'/CompanyLogin'}> Log In</Link></p>
 
                     </form>
 
