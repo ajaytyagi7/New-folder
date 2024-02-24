@@ -60,8 +60,8 @@ const Login = () => {
 
   
   return (
-    <div className='container-fluid  mb-5'>
-        <div className='col-md-4 mx-auto py-2 '>
+    <div className='container-fluid row  mb-5'>
+        <div className='col-md-4 mx-auto py-5 '>
             <div className=' mt-5'>
                 <div className='card-body  mt-2'>
                    <form className='rounded p-4 bg-white shadow' onSubmit={loginForm.handleSubmit}>
@@ -83,6 +83,10 @@ const Login = () => {
                 </div>
 
             </div>
+        </div>
+        <div className='col-md-5 '>
+          <img className='img-fluid'  src="https://img.freepik.com/premium-vector/illustration-vector-graphic-cartoon-character-login_516790-1261.jpg" alt="" />
+
         </div>
     </div>
   )

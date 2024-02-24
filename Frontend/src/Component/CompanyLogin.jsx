@@ -59,7 +59,7 @@ const CompanyLogin = () => {
 
   
   return (
-    <div className='container-fluid  '>
+    <div className='container-fluid row mb-5 company-login'>
         <div className='col-md-4 mx-auto py-2'>
             <div className='mt-5 '>
                 <div className='card-body p-3 '>
@@ -79,6 +79,10 @@ const CompanyLogin = () => {
                 </div>
 
             </div>
+        </div>
+        <div className='col-md-8 py-5'>
+          <img className='img-fluid'  src="https://cdni.iconscout.com/illustration/premium/thumb/sign-up-6333618-5230178.png?f=webp" alt="" />
+
         </div>
     </div>
   )

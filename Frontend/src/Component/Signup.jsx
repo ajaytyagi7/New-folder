@@ -67,8 +67,8 @@ const Signup = () => {
 
    
   return (
-    <div className='container-fluid  mb-5'>
-      <div className='row'>
+    <div className='container-fluid row  mb-5'>
+      
               
         <div className='col-md-4 mx-auto  py-4 '>
             <div className=' rounded-3 '>
@@ -98,9 +98,10 @@ const Signup = () => {
                
 
             </div>
-
         </div>
-        
+        <div className='col-md-5 py-8'>
+          <img className='img-fluid'  src="https://static.vecteezy.com/system/resources/previews/011/345/227/original/teenage-showing-how-to-sign-up-3d-cartoon-character-illustration-png.png" alt="" />
+
         </div>
     </div>
   )

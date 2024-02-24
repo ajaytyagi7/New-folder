@@ -36,8 +36,8 @@ const EmployeApply = () => {
         }
     })
   return (
-    <div className='container-fluid '>
-        <div className='col-md-4 p-5 mx-auto '>
+    <div className='container-fluid row'>
+        <div className='col-md-6 p-5 mx-auto '>
             <div className='card'>
                 <div className='card-body'>
                     <form onSubmit={EmployeApply.handleSubmit}>
@@ -67,6 +67,10 @@ const EmployeApply = () => {
                     </form>
                 </div>
             </div>
+        </div>
+        <div className='col-md-6 py-5'>
+          <img className='img-fluid'  src="https://img.freepik.com/free-vector/recruitment-concept-with-laptop_23-2148621834.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais" alt="" />
+
         </div>
     </div>
   )

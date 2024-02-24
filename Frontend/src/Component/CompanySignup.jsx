@@ -62,9 +62,9 @@ const CompanySignup = () => {
       }
       );
   return (
-    <div className='container-fluid  '>
+    <div className='container-fluid row  mx-5'>
         <div className='col-md-5 mx-auto py-3'>
-            <div className=''>
+            
                 <div className='card-body p-4 '>
                     <form className='rounded p-4 bg-white shadow ' onSubmit={CompanySignup.handleSubmit}>
                         <h1 className='text-center fw-bold'>Resgistration</h1>
@@ -92,6 +92,10 @@ const CompanySignup = () => {
                 </div>
 
             </div>
+
+        
+        <div className='col-md-7 py-5'>
+          <img className='img-fluid'  src="https://media.istockphoto.com/id/1226932404/vector/password-login-verification-code-push-message-or-sms-for-2fa-authentication-notice-with.jpg?s=612x612&w=0&k=20&c=9RFrAYp-KJhWkCHx6ZS61YwQgUiPJNiIBVbJYtwSGx0=" alt="" />
 
         </div>
     </div>

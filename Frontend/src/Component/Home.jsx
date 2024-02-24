@@ -33,7 +33,7 @@ const Home = () => {
     <div className='container-fluid'>
       <header className='text-white header row p-5'>
         <div className='col'>
-          <h1 className='  fw-bold display-1'>Your Dream <br />
+          <h1 className=' home-dream fw-bold display-1'>Your Dream <br />
             Job is Waiting</h1>
         </div>
         <div className='row '>

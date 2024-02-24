@@ -60,7 +60,7 @@ const JobPost = () => {
     return (
         <div className='container-fluid  mb-5 '>
             <div className='row'>
-                <div className='col-md-7 mx-auto py-2'>
+                <div className='col-md-7 mx-auto py-2 mt-4'>
                     <div className=''>
                         <div className='card-body'>
                             <form className='rounded bg-white shadow   p-4 bg-white' onSubmit={JobPostForm.handleSubmit} >
@@ -121,8 +121,10 @@ const JobPost = () => {
                         </div>
                     </div>
                 </div>
-                <div className='col-md-5 '>
-                    <img className='img-fluid post-img' src="https://cdn.dribbble.com/users/2837665/screenshots/16468935/media/ee9f3604d6b19a9af7086aa171ed0c97.png" alt="" />
+                <div className='col-md-5 mt-5'>
+                    <img  className='img-fluid  bg-white' src="https://img.freepik.com/free-vector/businessman-choosing-options-computer_1262-19222.jpg?w=826&t=st=1708793959~exp=1708794559~hmac=4ef6d01b4810a2d3537a22b71aea36eaee1f487c300819648f85791f8a223000" alt="" />
+                    <img className='img-fluid' src="https://img.freepik.com/free-vector/recruit-agent-analyzing-candidates_74855-4565.jpg?w=1060&t=st=1708794073~exp=1708794673~hmac=61f2255663f3b74311551f1d8dde8cce43b287336b8eb6ad16e7cb84719b91a2" alt="" />
+                    <img className='img-fluid' src="https://img.freepik.com/premium-vector/human-resources-flat-style-illustration-design_538610-598.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais" alt="" />
                 </div>
             </div>
            
