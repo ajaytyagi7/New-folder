@@ -60,21 +60,20 @@ const Login = () => {
 
   
   return (
-    <div className='container-fluid employe-login-bg-img '>
-        <div className='col-md-4 mx-auto py-4'>
+    <div className='container-fluid  mb-5'>
+        <div className='col-md-4 mx-auto py-2 '>
             <div className=' mt-5'>
-                <div className='card-body p-4 mt-2'>
+                <div className='card-body  mt-2'>
                    <form className='rounded p-4 bg-white shadow' onSubmit={loginForm.handleSubmit}>
                     <h1 className='text-center fw-bold'>Login</h1>
                    <hr />
                     <span className='ms-4 fs-6 text-danger'>{  loginForm.errors.email}</span>
-                    <input type="text" className='form-control border border-secondary' placeholder=' Email Address' id='email' onChange={loginForm.handleChange} value={loginForm.values.email} />&nbsp;
+                    <input type="text" className='form-control border border-secondary p-2 border border-dark' placeholder=' Email Address' id='email' onChange={loginForm.handleChange} value={loginForm.values.email} />&nbsp;
                     
                     <span className='ms-4 fs-6 text-danger'>{  loginForm.errors.password}</span>
-                    <input type="password"  className='form-control border border-secondary' placeholder=' Password' id='password'  onChange={loginForm.handleChange} value={loginForm.values.password}/>&nbsp;
+                    <input type="password"  className='form-control border border-secondary p-2 border border-dark' placeholder=' Password' id='password'  onChange={loginForm.handleChange} value={loginForm.values.password}/>&nbsp;
                     
                     <button className='btn btn-primary w-100'>Login</button>&nbsp;
-                    <a className='text-decoration-none' href="">Forget Password</a>
                    
 
                     <p className='text-center mt-3'>Don't Have an Account ?  <a className=" text-decoration-none" href="/Signup">Signup</a></p>

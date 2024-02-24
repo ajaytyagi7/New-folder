@@ -59,21 +59,20 @@ const CompanyLogin = () => {
 
   
   return (
-    <div className='container-fluid company-login-bg-img  '>
+    <div className='container-fluid  '>
         <div className='col-md-4 mx-auto py-2'>
             <div className='mt-5 '>
                 <div className='card-body p-3 '>
-                   <form className='rounded bg-white p-4' onSubmit={CompanyLoginForm.handleSubmit}>
-                    <h1 className='text-center fw-bold'>Company Login</h1><hr />
+                   <form className='rounded bg-white p-4 shadow' onSubmit={CompanyLoginForm.handleSubmit}>
+                    <h1 className='text-center fw-bold'> Login</h1><hr />
                     <span className='ms-4 fs-6 text-danger'>{  CompanyLoginForm.errors.email}</span>
-                    <input type="text" className='form-control  border border-secondary'  placeholder=' Email' id='email' onChange={CompanyLoginForm.handleChange} value={CompanyLoginForm.values.email} />&nbsp;
+                    <input type="text" className='form-control  border border-secondary p-2 border border-dark'  placeholder=' Email' id='email' onChange={CompanyLoginForm.handleChange} value={CompanyLoginForm.values.email} />&nbsp;
                     
                     <span className='ms-4 fs-6 text-danger'>{  CompanyLoginForm.errors.password}</span>
-                    <input type="text"  className='form-control border border-secondary' placeholder=' Password' id='password'  onChange={CompanyLoginForm.handleChange} value={CompanyLoginForm.values.password}/>&nbsp;
+                    <input type="text"  className='form-control border border-secondary p-2 border border-dark' placeholder=' Password' id='password'  onChange={CompanyLoginForm.handleChange} value={CompanyLoginForm.values.password}/>&nbsp;
                     
                     <button className='btn btn-primary w-100 mb-2'>Login</button>&nbsp;
-                    <Link className='text-decoration-none'>Forget Password</Link>
-                    <p>Don't Have an Account ?<Link className=" text-decoration-none  " to={'/CompanySignup'}> Sign Up</Link></p>
+                    <p className='text-center'>Don't Have an Account ?<Link className=" text-decoration-none  " to={'/CompanySignup'}> Sign Up</Link></p>
 
                     
                     </form> 

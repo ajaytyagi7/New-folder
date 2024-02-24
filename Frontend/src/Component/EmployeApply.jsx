@@ -36,7 +36,7 @@ const EmployeApply = () => {
         }
     })
   return (
-    <div className='container-fluid apply-bg-img'>
+    <div className='container-fluid '>
         <div className='col-md-4 p-5 mx-auto '>
             <div className='card'>
                 <div className='card-body'>
