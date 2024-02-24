@@ -1,25 +1,27 @@
 import { enqueueSnackbar } from "notistack";
 import { createContext, useContext, useState } from "react";
-import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const UserContext = createContext();
 
 export const UserProvider = ({ children }) => {
 
+    const navigate=useNavigate();
+
     const [currentUser, setCurrentUser] = useState(JSON.parse(sessionStorage.getItem('user')));
 
     const [userloggedIn, setuserloggedIn] = useState(currentUser !== null);
 
-    const logout = () => {
+    const Logout = () => {
         sessionStorage.removeItem('user');
-        Navigate('/Login');
+        navigate('/Home');
         enqueueSnackbar('Loged Out Successfully ', { variant: 'success' });
         setuserloggedIn(false);
     }
 
     
 
-    return <UserContext.Provider value={{ currentUser, setCurrentUser, userloggedIn, setuserloggedIn, logout }}>
+    return <UserContext.Provider value={{ currentUser, setCurrentUser, userloggedIn, setuserloggedIn, Logout }}>
         {children}
     </UserContext.Provider>
 };

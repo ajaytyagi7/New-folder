@@ -74,13 +74,13 @@ const Navbar = () => {
              </li>:<>
              <li className="nav-item">
                 <NavLink className="nav-link " to="/Login">
-                 <button className='p-1'>Login</button>
+                 <p className='fs-4 text-dark'><i class="fa-solid fa-user"></i></p>
                 </NavLink>
               </li>
 
             <li className="nav-item">
                 <NavLink className="nav-link" to="/Signup">
-                  <button className='btn btn-primary'>Signup</button>
+                  <p className='fs-4 text-dark'><i class="fa-solid fa-users"></i></p>
                 </NavLink>
               </li>
              </>

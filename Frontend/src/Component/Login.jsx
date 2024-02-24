@@ -74,9 +74,10 @@ const Login = () => {
                     <input type="password"  className='form-control border border-secondary' placeholder=' Password' id='password'  onChange={loginForm.handleChange} value={loginForm.values.password}/>&nbsp;
                     
                     <button className='btn btn-primary w-100'>Login</button>&nbsp;
-                    <Link className='text-decoration-none'>Forget Password</Link>
+                    <a className='text-decoration-none' href="">Forget Password</a>
+                   
 
-                    <p>Don't Have an Account ? <Link to={'/'} className=" text-decoration-none">Signup</Link></p>
+                    <p className='text-center mt-3'>Don't Have an Account ?  <a className=" text-decoration-none" href="/Signup">Signup</a></p>
 
                     
                     </form> 
