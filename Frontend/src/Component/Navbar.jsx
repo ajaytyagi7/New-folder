@@ -6,7 +6,7 @@ import useUserContext from '../UserContext';
 const Navbar = () => {
 
   const { companyLoggedin, logout } = useCompanyContext();
-  const {isLoggedIn} = useUserContext();
+  const {userloggedIn} = useUserContext();
 
   const showCompanyOptions = () => {
     if (companyLoggedin) {
@@ -66,10 +66,10 @@ const Navbar = () => {
 
             </ul>
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-              {isLoggedIn ?
+              {userloggedIn ?
                <li className="nav-item">
                <NavLink className="nav-link " to="/Logout">
-                <button className='p-1'>Logout</button>
+                <button className='p-1 btn btn-danger'>Logout</button>
                </NavLink>
              </li>:<>
              <li className="nav-item">

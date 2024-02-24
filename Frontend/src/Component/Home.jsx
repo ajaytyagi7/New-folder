@@ -24,7 +24,7 @@ const Home = () => {
   }
   const searchLocation = () => {
     const filterData = [].filter((job) => {
-      return job.name.toLowerCase().includes(searchRef.current.value.toLowerCase());
+      return job.address.toLowerCase().includes(searchRef.current.value.toLowerCase());
     });
     
     setjobList(filterData);

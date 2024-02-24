@@ -19,6 +19,7 @@ import About from "./Component/About";
 import { CompanyProvider } from "./CompanyContext";
 import Footer from "./Component/Footer";
 import Logout from "./Component/Logout";
+import { UserProvider } from "./UserContext";
 
 const App = () => {
 
@@ -27,33 +28,34 @@ const App = () => {
       <SnackbarProvider maxSnack={3} anchorOrigin={{ vertical: 'top', horizontal: 'right' }} >
 
         <BrowserRouter>
-
-          <CompanyProvider>
-            <Navbar />
-
-
-            <Routes>
-              <Route path='/' element={<Home />} />
-              <Route path='Home' element={<Home />} />
-              <Route path='Signup' element={<Signup />} />
-              <Route path='Login' element={<Login />} />
-              <Route path='CompanySignup' element={<CompanySignup />} />
-              <Route path='CompanyLogin' element={<CompanyLogin />} />
-              <Route path='JobPost' element={<JobPost />} />
-              <Route path='ListingJob' element={<ListingJob />} />
-              <Route path='InterviewDetail' element={<InterviewDetail />} />
-              <Route path='ManageInterviewData' element={<ManageInterviewData />} />
-              <Route path='EmployeApply' element={<EmployeApply />} />
-              <Route path='ManageEmployeData' element={<ManageEmployeData />} />
-              <Route path='Contact' element={<Contact />} />
-              <Route path='About' element={<About />} />
-              <Route path='Logout' element={<Logout />} />
+          <UserProvider>
+            <CompanyProvider>
+              <Navbar />
 
 
-              <Route path='detail/:id' element={<InterviewDetail />} />
-            </Routes>
-            <Footer></Footer>
-          </CompanyProvider>
+              <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path='Home' element={<Home />} />
+                <Route path='Signup' element={<Signup />} />
+                <Route path='Login' element={<Login />} />
+                <Route path='CompanySignup' element={<CompanySignup />} />
+                <Route path='CompanyLogin' element={<CompanyLogin />} />
+                <Route path='JobPost' element={<JobPost />} />
+                <Route path='ListingJob' element={<ListingJob />} />
+                <Route path='InterviewDetail' element={<InterviewDetail />} />
+                <Route path='ManageInterviewData' element={<ManageInterviewData />} />
+                <Route path='EmployeApply' element={<EmployeApply />} />
+                <Route path='ManageEmployeData' element={<ManageEmployeData />} />
+                <Route path='Contact' element={<Contact />} />
+                <Route path='About' element={<About />} />
+                <Route path='Logout' element={<Logout />} />
+
+
+                <Route path='detail/:id' element={<InterviewDetail />} />
+              </Routes>
+              <Footer></Footer>
+            </CompanyProvider>
+          </UserProvider>
         </BrowserRouter>
       </SnackbarProvider>
 

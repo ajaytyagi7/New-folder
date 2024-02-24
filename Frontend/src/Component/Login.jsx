@@ -4,7 +4,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import * as Yup from 'yup';
 import { useNavigate } from 'react-router-dom';
-import useUserContext from '../CompanyContext';
+import useUserContext from '../UserContext';
 
 
 
@@ -76,7 +76,7 @@ const Login = () => {
                     <button className='btn btn-primary w-100'>Login</button>&nbsp;
                     <Link className='text-decoration-none'>Forget Password</Link>
 
-                    <p>Don't Have an Account ? <Link to={'/'} className=" text-decoration-none  ">Signup</Link></p>
+                    <p>Don't Have an Account ? <Link to={'/'} className=" text-decoration-none">Signup</Link></p>
 
                     
                     </form> 

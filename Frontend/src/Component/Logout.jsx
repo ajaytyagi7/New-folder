@@ -12,7 +12,7 @@ const Logout = () => {
     },[Logout]);
 
   return (
-    <Navigate to={'/Login'}/>
+    <Navigate to={'/Home'}/>
     
   )
 }

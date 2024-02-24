@@ -4,11 +4,11 @@ import { Navigate } from "react-router-dom";
 
 const UserContext = createContext();
 
-export const UserProvider = ({ childern }) => {
+export const UserProvider = ({ children }) => {
 
     const [currentUser, setCurrentUser] = useState(JSON.parse(sessionStorage.getItem('user')));
 
-    const [userloggedIn, setuserloggedIn] = useState(currentUser = !null);
+    const [userloggedIn, setuserloggedIn] = useState(currentUser !== null);
 
     const logout = () => {
         sessionStorage.removeItem('user');
@@ -20,7 +20,7 @@ export const UserProvider = ({ childern }) => {
     
 
     return <UserContext.Provider value={{ currentUser, setCurrentUser, userloggedIn, setuserloggedIn, logout }}>
-        {childern}
+        {children}
     </UserContext.Provider>
 };
 
