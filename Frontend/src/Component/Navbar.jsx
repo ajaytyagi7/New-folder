@@ -13,7 +13,7 @@ const Navbar = () => {
       return <>
         <li className="nav-item">
           <NavLink className="nav-link" to="/JobPost">
-            <button className='btn btn-danger'>Post Job</button>
+            <button className='btn btn-primary'>Post Job</button>
           </NavLink>
         </li>
       </>
@@ -80,7 +80,7 @@ const Navbar = () => {
 
             <li className="nav-item">
                 <NavLink className="nav-link" to="/Signup">
-                  <p className='fs-4 text-dark'><i class="fa-solid fa-users"></i></p>
+                  <p className=' text-dark btn btn-warning'>Sign Up</p>
                 </NavLink>
               </li>
              </>
@@ -88,7 +88,7 @@ const Navbar = () => {
               <li className="nav-item">
                 <NavLink className="nav-link" to="">
                   <div>
-                    <Link className='text-decoration-none ' to={'/CompanySignup'}> <button className='btn btn-success float-end'>Hire </button></Link>
+                    <Link className='text-decoration-none ' to={'/CompanySignup'}> <button className='btn btn-secondary float-end'>Hire </button></Link>
 
                   </div>
                 </NavLink>

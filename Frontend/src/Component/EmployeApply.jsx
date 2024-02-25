@@ -38,27 +38,22 @@ const EmployeApply = () => {
   return (
     <div className='container-fluid row'>
         <div className='col-md-6 p-5 mx-auto '>
-            <div className='card'>
+            <div className=''>
                 <div className='card-body'>
-                    <form onSubmit={EmployeApply.handleSubmit}>
+                    <form className='bg-white shadow p-4' onSubmit={EmployeApply.handleSubmit}>
                         <h1 className='text-center'>Apply Interview</h1> <hr />
-                        <label htmlFor="name"> Name</label>
                         <span className='ms-4 fs-6 text-danger'>{ EmployeApply.touched.name && EmployeApply.errors.name}</span>
                         <input type="text" className='form-control mb-3' placeholder='Enter your Name' id='name' onChange={EmployeApply.handleChange} value={EmployeApply.values.name} />
                     
-                        <label htmlFor="email"> Email</label>
                         <span className='ms-4 fs-6 text-danger'>{ EmployeApply.touched.email && EmployeApply.errors.email}</span>
                         <input type="text" className='form-control mb-3' placeholder=' Enter your email' id='email' onChange={EmployeApply.handleChange} value={EmployeApply.values.email}/>
                     
-                        <label htmlFor="phone"> Phone Number</label>
                         <span className='ms-4 fs-6 text-danger'>{ EmployeApply.touched.phone && EmployeApply.errors.phone}</span>
                         <input type="text" className='form-control mb-3' placeholder='Your Phone Number' id='phone' onChange={EmployeApply.handleChange} value={EmployeApply.values.phone} />
 
-                        <label htmlFor="DOB"> Date of Birth</label>
                         <span className='ms-4 fs-6 text-danger'>{ EmployeApply.touched.DOB && EmployeApply.errors.DOB}</span>
                         <input type="date" className='form-control mb-3 ' placeholder='Your DOB' id='DOB' onChange={EmployeApply.handleChange} value={EmployeApply.values.DOB} />
 
-                        <label htmlFor="resume">Upload Resume</label>
                         <span className='ms-4 fs-6 text-danger'>{ EmployeApply.touched.resume && EmployeApply.errors.resume}</span>
                         <input type="file" className='form-control mb-3' id='resume' onChange={EmployeApply.handleChange} value={EmployeApply.values.resume}/>
 

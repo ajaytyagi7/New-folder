@@ -32,19 +32,22 @@ const Home = () => {
   return (
     <div className='container-fluid'>
       <header className='text-white header row p-5'>
-        <div className='col'>
-          <h1 className=' home-dream fw-bold display-1'>Your Dream <br />
+        <div className='col-md-7'>
+          <h1 className=' fw-bold display-1'>Your Dream <br />
             Job is Waiting</h1>
+            <button className='btn btn-warning mt-5 '>Apply Interview</button>
         </div>
-        <div className='row '>
-          <div className='col-md-4'>
-            <input type="text" className='form-control taxt-dark  ' placeholder='Job title or Company name ' ref={searchRef} />
-          </div>
-          <div className='col-md-4'>
-            <input type="text" className='form-control taxt-dark ' placeholder='City or Region '  ref={searchRef}/>
-          </div>
-          <div className='col-md-4'>
-            <button className='btn btn-success' onClick={searchProduct} onClickCapture={searchLocation}>Search </button>
+        <div className='col-md-5 '>
+          <div className='row'>
+            <div className='col-md-4'>
+              <input type="text" className='form-control taxt-dark border border-dark ' placeholder='Job title or Company name ' ref={searchRef} />
+            </div>
+            <div className='col-md-4'>
+              <input type="text" className='form-control taxt-dark  border border-dark' placeholder='City or Region '  ref={searchRef}/>
+            </div>
+            <div className='col-md-4'>
+              <button className='btn btn-success  border border-dark' onClick={searchProduct} onClickCapture={searchLocation}>Search </button>
+            </div>
           </div>
         </div>
       </header>

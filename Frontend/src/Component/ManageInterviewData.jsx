@@ -49,7 +49,6 @@ const ManageInterviewData = () => {
             <thead>
                 <tr>
                     <th>Title</th>
-                    <th>Company Name</th>
                     <th>Address</th>
                     <th>Salary</th>
                     <th>Experience</th>
@@ -65,7 +64,6 @@ const ManageInterviewData = () => {
                     joblist.map((interview ) =>{
                         return <tr>
                             <td>{interview.title}</td>
-                            <td>{interview.name}</td>
                             <td>{interview.address}</td>
                             <td>{interview.salary}</td>
                             <td>{interview.experience}</td>

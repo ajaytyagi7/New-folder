@@ -70,10 +70,10 @@ const Signup = () => {
     <div className='container-fluid row  mb-5'>
       
               
-        <div className='col-md-4 mx-auto  py-4 '>
+        <div className='col-md-5 mx-auto  py-4 '>
             <div className=' rounded-3 '>
                 <div className='card-body '>
-                    <form className='bg-white p-3 rounded shadow' onSubmit={signupForm.handleSubmit}  >
+                    <form className='bg-white p-4 rounded shadow' onSubmit={signupForm.handleSubmit}  >
                         <h1 className='text-center fw-bold'>Create Account</h1>
                         <hr />
                         <span className='ms-4 fs-6 text-danger'>{ signupForm.touched.name && signupForm.errors.name}</span>
@@ -99,8 +99,8 @@ const Signup = () => {
 
             </div>
         </div>
-        <div className='col-md-5 py-8'>
-          <img className='img-fluid'  src="https://static.vecteezy.com/system/resources/previews/011/345/227/original/teenage-showing-how-to-sign-up-3d-cartoon-character-illustration-png.png" alt="" />
+        <div className='col-md-6 py-8'>
+          <img className='img-fluid'  src="https://img.freepik.com/premium-vector/new-user-online-registration-sign-up-concept-tiny-characters-signing-up-huge-smartphone-with-secure-password-login-account-mobile-app-web-access-cartoon-people-vector-illustration_87771-11429.jpg" alt="" />
 
         </div>
     </div>

@@ -75,3 +75,7 @@
 .company-login{
     margin-left: 300px;
 }
+.nav-item .active{
+    font-weight: bold;
+    color: darkblue !important;
+}
