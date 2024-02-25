@@ -72,7 +72,7 @@ const Login = () => {
                     
                     <span className='ms-4 fs-6 text-danger'>{  loginForm.errors.password}</span>
                     <input type="password"  className='form-control border border-secondary p-2 border border-dark' placeholder=' Password' id='password'  onChange={loginForm.handleChange} value={loginForm.values.password}/>&nbsp;
-                    
+                    <input type="checkbox" className='mt-3 mb-3 p-2'  /><label className='mx-2' htmlFor="remember">Remember me</label>
                     <button className='btn btn-primary w-100'>Login</button>&nbsp;
                    
 

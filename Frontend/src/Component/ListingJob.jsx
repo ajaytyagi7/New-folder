@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 const ListingJob = () => {
 
@@ -8,6 +8,9 @@ const ListingJob = () => {
   const [joblist, setJoblist] = useState([])
   const [masterlist, setmasterlist] = useState([])
   const searchRef = useRef(null)
+
+  const {title, location} = useParams();
+  
 
   const JobRole = ['Web Developer', 'Frontend Developer', 'Backend Developer', 'Marketing', 'BPO', 'Full Stack Developer']
   const [RoleList, setRoleList] = useState([])
@@ -19,11 +22,11 @@ const ListingJob = () => {
   const [salaryList, setSalaryList] = useState([]);
 
   const searchJob = () => {
-    const filteredData = masterList.filter((role) => {
-      return laptop.name.toLowerCase().includes(searchRef.current.value.toLowerCase())
+    const filteredData = masterlist.filter((job) => {
+      return job.title.toLowerCase().includes(searchRef.current.value.toLowerCase())
     });
     console.log(filteredData);
-    sethandicraftList(filteredData);
+    setJoblist(filteredData);
   }
 
   const filterRole = (e) => {
@@ -58,7 +61,7 @@ const ListingJob = () => {
         const filterData = joblist.filter((job) => { return filterJobRole.includes(job.title) })
         setJoblist(filterData)
       }
-    }else{
+    } else {
       setRoleList([...RoleList, JobRole])
       const filterData = masterlist.filter((job) => { return [...RoleList, JobRole].includes(job.title) })
       // console.log(rol);
@@ -78,13 +81,13 @@ const ListingJob = () => {
         const filterData = joblist.filter((c) => { return filtercity.includes(c.address) })
         setJoblist(filterData)
       }
-  }else{
-    setCitylist([...citylist, city])
-    const filterData = masterlist.filter((c) => { return [...citylist, city].includes(c.address) })
-    console.log(filterData);
-    setJoblist(filterData)
+    } else {
+      setCitylist([...citylist, city])
+      const filterData = masterlist.filter((c) => { return [...citylist, city].includes(c.address) })
+      console.log(filterData);
+      setJoblist(filterData)
+    }
   }
-}
 
   const SelectSalary = (e, salary) => {
     console.log(e.target.checked);
@@ -97,9 +100,9 @@ const ListingJob = () => {
         const filterData = joblist.filter((s) => { return filtersalary.includes(s.salary) })
         setJoblist(filterData)
       }
-    }else{
-      setSalaryList([...salaryList,salary])
-      const filterData=masterlist.filter((s) =>{return [...salaryList,salary].includes(c.salary)})
+    } else {
+      setSalaryList([...salaryList, salary])
+      const filterData = masterlist.filter((s) => { return [...salaryList, salary].includes(c.salary) })
       console.log(filterData)
       setJoblist(filterData);
     }
@@ -110,9 +113,16 @@ const ListingJob = () => {
     const res = await fetch(`${import.meta.env.VITE_API_URL}/job/getall`)
     console.log(res.status);
 
-    const data = await res.json();
+    let data = await res.json();
+    
+    if(title){
+      data = data.filter((job) => job.title.toLowerCase().includes(title.toLowerCase()));
+    }
+    if(location){
+      data = data.filter((job) => job.address.toLowerCase().includes(location.toLowerCase()));
+    }
+    
     console.table(data);
-
     setJoblist(data);
     setmasterlist(data);
   }
@@ -124,8 +134,8 @@ const ListingJob = () => {
   return (
     <div className='container'>
       <div className='d-flex mt-3 w-50' style={{ position: 'relative', left: 400 }}>
-        <input type="text" className='form-control' placeholder='Search job....' />
-        <button className='btn btn-primary' onPointerLeaveCapture={searchJob}>Search</button>
+        <input type="text" ref={searchRef} className='form-control' placeholder='Search job....' />
+        <button className='btn btn-primary' onClick={searchJob}>Search</button>
       </div>
       <div className='container-fluid'>
         <div className='row'>
@@ -149,7 +159,6 @@ const ListingJob = () => {
                     return <div>
                       <input type="checkbox" checked={citylist.includes(city)} onChange={(e) => { SelectCity(e, city) }} />
                       <label className='mx-2'>{city}</label>
-
                     </div>
                   })
                 }
@@ -182,7 +191,7 @@ const ListingJob = () => {
                       <p>{item.experience}</p>
                       <p className='mx-4'>{item.jobtype}</p>
                     </div>
-                   
+
                     <Link to={"/detail/" + item._id}> <button className='btn btn-primary float-end'>View Details</button></Link>
                   </div>
 

@@ -23,9 +23,9 @@ const InterviewDetail = () => {
 
     const displayDetails= () =>{
       if(interviewData !==null){
-        return <div  style={{ overflow: 'hidden' }}>
+        return <div >
           <div className='container-fluid row'>
-            <div className='card bg-dark-subtle mx-auto mt-5 '>
+            <div className=' bg-dark-subtle p-4 mt-5 w-75 mx-auto '>
               <div className='col-md-12 p-4'>
                 <div>
                   <h5 className='fw-bold'>{interviewData.title}</h5>

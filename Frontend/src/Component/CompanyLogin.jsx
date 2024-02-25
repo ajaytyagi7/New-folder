@@ -70,7 +70,7 @@ const CompanyLogin = () => {
                     
                     <span className='ms-4 fs-6 text-danger'>{  CompanyLoginForm.errors.password}</span>
                     <input type="text"  className='form-control border border-secondary p-2 border border-dark' placeholder=' Password' id='password'  onChange={CompanyLoginForm.handleChange} value={CompanyLoginForm.values.password}/>&nbsp;
-                    
+                    <input type="checkbox" className='mt-3 mb-3 p-2'  /><label className='mx-2' htmlFor="remember">Remember me</label>
                     <button className='btn btn-primary w-100 mb-2'>Login</button>&nbsp;
                     <p className='text-center'>Don't Have an Account ?<Link className=" text-decoration-none  " to={'/CompanySignup'}> Sign Up</Link></p>
 

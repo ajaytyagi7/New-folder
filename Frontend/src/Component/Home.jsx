@@ -1,6 +1,6 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useState, useRef } from 'react';
 
 import 'swiper/css';
@@ -14,14 +14,16 @@ import { Pagination, Autoplay } from 'swiper/modules';
 const Home = () => {
   const [jobList, setjobList] = useState([])
   const searchRef = useRef(null);
+  const locationRef = useRef(null);
+
+  const navigate = useNavigate();
 
   const searchProduct = () => {
-    const filterData = [].filter((job) => {
-      return job.name.toLowerCase().includes(searchRef.current.value.toLowerCase());
-    });
-    
-    setjobList(filterData);
+    navigate(`/ListingJob/${searchRef.current.value}/${locationRef.current.value}`);
   }
+
+
+
   const searchLocation = () => {
     const filterData = [].filter((job) => {
       return job.address.toLowerCase().includes(searchRef.current.value.toLowerCase());
@@ -31,25 +33,24 @@ const Home = () => {
   }
   return (
     <div className='container-fluid'>
-      <header className='text-white header row p-5'>
-        <div className='col-md-7'>
-          <h1 className=' fw-bold display-1'>Your Dream <br />
+      <header className='text-white header p-5'>
+        <div >
+          <h1 className='  fw-bold display-1'>Your Dream <br />
             Job is Waiting</h1>
-            <button className='btn btn-warning mt-5 '>Apply Interview</button>
         </div>
-        <div className='col-md-5 '>
-          <div className='row'>
+        
+          <div className='row mt-5'>
             <div className='col-md-4'>
               <input type="text" className='form-control taxt-dark border border-dark ' placeholder='Job title or Company name ' ref={searchRef} />
             </div>
             <div className='col-md-4'>
-              <input type="text" className='form-control taxt-dark  border border-dark' placeholder='City or Region '  ref={searchRef}/>
+              <input type="text" className='form-control taxt-dark  border border-dark' placeholder='City or Region '  ref={locationRef}/>
             </div>
             <div className='col-md-4'>
-              <button className='btn btn-success  border border-dark' onClick={searchProduct} onClickCapture={searchLocation}>Search </button>
+              <button className='btn btn-success  border border-dark' onClick={searchProduct}>Search </button>
             </div>
           </div>
-        </div>
+       
       </header>
 
 
