@@ -183,7 +183,7 @@ const ListingJob = () => {
               {joblist.map((item) => {
                 return (<div className='col-md-9  '>
                   <div className='card p-3  bg-dark-subtle'>
-                    <h4>{item.title}</h4>
+                    <h5 className='text-primary'>{item.title}</h5>
                     <p>{item.company.name}</p>
                     <p><i class="fa-solid fa-location-dot"></i> {item.address}</p>
                     <h6>₹{item.salary}</h6>

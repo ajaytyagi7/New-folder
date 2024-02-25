@@ -28,9 +28,7 @@ const Navbar = () => {
     <div className='bg-secondary'>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container ">
-          <a className="navbar-brand" href="#">
-            <img style={{ height: 60 }} src="https://scontent.flko7-3.fna.fbcdn.net/v/t39.30808-1/358679381_617054113864472_8606947404320800031_n.jpg?stp=cp0_dst-jpg_e15_p120x120_q65&_nc_cat=106&ccb=1-7&_nc_sid=4da83f&_nc_ohc=lpH1ur0ci2EAX-ZSyHl&_nc_ht=scontent.flko7-3.fna&oh=00_AfB_oihw18Dbi7H5UefruUNwn1J6VzoY_akfhD8iJkSJ6w&oe=65D14CE6" alt="" />
-          </a>
+          <h2 className='text-decoration-none text-dark fw-bold'>OffBeatCampus</h2>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>

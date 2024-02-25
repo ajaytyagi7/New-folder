@@ -52,11 +52,12 @@ const contactSchema=Yup.object().shape({
     });
 
   return (
-    <div className='container-fluid contact-bg-img text-white'>
-        <form className='w-50  mx-auto  mt-4 ' onSubmit={contactForm.handleSubmit}>
-            <div className='col-md-8 mx-auto py-5'>
+    <div className='container-fluid row mb-5'>
+      <div className='col-md-5 mx-auto py-3'>
+        <form className='  mx-auto  mt-4 bg-white  shadow mt-5' onSubmit={contactForm.handleSubmit}>
+            
                 <div className='card-body p-3'>
-                    <h1 className='text-center  fw-bold'>Contact Us</h1> <hr className='text-white' />
+                    <h1 className='text-center  fw-bold'>Contact Us</h1> <hr  />
                      <span className='ms-4 fs-6 text-danger'>{  contactForm.errors.name}</span>
                     <input type="text" id='name' className='form-control ' placeholder='Enter Your Name' onChange={contactForm.handleChange} value={contactForm.values.name} />
                     <span className='ms-4 fs-6 text-danger'>{  contactForm.errors.email}</span>
@@ -68,8 +69,14 @@ const contactSchema=Yup.object().shape({
 
                     
                 </div>
-            </div>
+            
         </form>
+        </div>
+        <div className='col-md-6 py-5'>
+          <img className='img-fluid'  src="https://media.istockphoto.com/id/1396231491/vector/writing-letters-concept.jpg?s=612x612&w=0&k=20&c=gjDeKxJarOyushiS7dXHUwB4am4Ix3RP7dCGp9h6G4o=" alt="" />
+
+        </div>
+       
     </div>
   )
 }

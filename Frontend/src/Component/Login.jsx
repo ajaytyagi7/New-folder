@@ -74,9 +74,9 @@ const Login = () => {
                     <input type="password"  className='form-control border border-secondary p-2 border border-dark' placeholder=' Password' id='password'  onChange={loginForm.handleChange} value={loginForm.values.password}/>&nbsp;
                     <input type="checkbox" className='mt-3 mb-3 mx-2 p-2'  /><label className='' htmlFor="remember">Remember me</label>
                     <button className='btn btn-primary w-100'>Login</button>&nbsp;
+                    <p className='text-center mt-3'>Don't Have an Account ?  <a className=" text-decoration-none" href="/Signup">Signup</a></p>
                    
 
-                    <p className='text-center mt-3'>Don't Have an Account ?  <a className=" text-decoration-none" href="/Signup">Signup</a></p>
 
                     
                     </form> 

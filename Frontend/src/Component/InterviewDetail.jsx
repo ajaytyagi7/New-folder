@@ -26,14 +26,19 @@ const InterviewDetail = () => {
         return <div >
           <div className='container-fluid row'>
             <div className=' bg-dark-subtle p-4 mt-5 w-75 mx-auto '>
-              <div className='col-md-12 p-4'>
-                <div>
-                  <h5 className='fw-bold'>{interviewData.title}</h5>
-                  <p>{interviewData.company.name}</p>
-                  <p>{interviewData.experience}</p>
-                  <p><i class="fa-solid fa-location-dot"></i> {interviewData.address}</p>
-                  <hr />
-                  <Link to={'/EmployeApply'}><button className='btn btn-primary float-end '>Apply Application</button></Link>
+              <div className='row'>
+                <div className='col-md-8 p-4'>
+                    <div>
+                      <h5 className='fw-bold'>{interviewData.title}</h5>
+                      <p>{interviewData.company.name}</p>
+                      <p>{interviewData.experience}</p>
+                      <p><i class="fa-solid fa-location-dot"></i> {interviewData.address}</p>
+                      <hr />
+                      <Link to={'/EmployeApply'}><button className='btn btn-primary float-end '>Apply </button></Link>
+                    </div>
+                </div>
+                <div className='col-md-4'>
+                  <img className='img-fluid' src="https://cdni.iconscout.com/illustration/premium/thumb/searching-for-job-online-4487043-3738450.png" alt="" />
                 </div>
               </div>
             </div>
