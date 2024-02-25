@@ -60,7 +60,7 @@ const Login = () => {
 
   
   return (
-    <div className='container-fluid row  mb-5'>
+    <div className='container-fluid row '>
         <div className='col-md-4 mx-auto py-5 '>
             <div className=' mt-5'>
                 <div className='card-body  mt-2'>
@@ -72,7 +72,7 @@ const Login = () => {
                     
                     <span className='ms-4 fs-6 text-danger'>{  loginForm.errors.password}</span>
                     <input type="password"  className='form-control border border-secondary p-2 border border-dark' placeholder=' Password' id='password'  onChange={loginForm.handleChange} value={loginForm.values.password}/>&nbsp;
-                    <input type="checkbox" className='mt-3 mb-3 p-2'  /><label className='mx-2' htmlFor="remember">Remember me</label>
+                    <input type="checkbox" className='mt-3 mb-3 mx-2 p-2'  /><label className='' htmlFor="remember">Remember me</label>
                     <button className='btn btn-primary w-100'>Login</button>&nbsp;
                    
 
@@ -85,7 +85,7 @@ const Login = () => {
             </div>
         </div>
         <div className='col-md-5 '>
-          <img className='img-fluid'  src="https://img.freepik.com/premium-vector/illustration-vector-graphic-cartoon-character-login_516790-1261.jpg" alt="" />
+          <img className='img-fluid '  src="https://img.freepik.com/premium-vector/illustration-vector-graphic-cartoon-character-login_516790-1261.jpg" alt="" />
 
         </div>
     </div>
