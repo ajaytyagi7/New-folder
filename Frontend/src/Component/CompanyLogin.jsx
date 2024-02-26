@@ -37,7 +37,7 @@ const CompanyLogin = () => {
         method:'POST',
         body:JSON.stringify(values),
         headers:{
-          'Content-type':'application/json'
+          'Content-Type':'application/json'
         }
       });
 
@@ -94,7 +94,7 @@ const CompanyLogin = () => {
             </div>
         </div>
         <div className='col-md-6 py-5'>
-          <img className='img-fluid'  src="https://cdni.iconscout.com/illustration/premium/thumb/sign-up-6333618-5230178.png?f=webp" alt="" />
+          <img className='img-fluid'  src="" alt="" />
 
         </div>
     </div>

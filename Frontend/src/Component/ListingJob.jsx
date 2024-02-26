@@ -9,8 +9,8 @@ const ListingJob = () => {
   const [masterlist, setmasterlist] = useState([])
   const searchRef = useRef(null)
 
-  const {title, location} = useParams();
-  
+  const { title, location } = useParams();
+
 
   const JobRole = ['Web Developer', 'Frontend Developer', 'Backend Developer', 'Marketing', 'BPO', 'Full Stack Developer']
   const [RoleList, setRoleList] = useState([])
@@ -114,14 +114,14 @@ const ListingJob = () => {
     console.log(res.status);
 
     let data = await res.json();
-    
-    if(title){
+
+    if (title) {
       data = data.filter((job) => job.title.toLowerCase().includes(title.toLowerCase()));
     }
-    if(location){
+    if (location) {
       data = data.filter((job) => job.address.toLowerCase().includes(location.toLowerCase()));
     }
-    
+
     console.table(data);
     setJoblist(data);
     setmasterlist(data);
@@ -140,7 +140,7 @@ const ListingJob = () => {
       <div className='container-fluid'>
         <div className='row'>
           <div className='col-md-3'>
-            <div className='card bg-secondary-subtle'>
+            <div className='card border-0 shadow'>
               <div className='card-body mt-3'>
                 <h4>Filter Job Role</h4>
                 {
@@ -181,7 +181,7 @@ const ListingJob = () => {
           <div className='col-md-9 mt-3 mb-5'>
             <div className='row gy-4'>
               {joblist.map((item) => {
-                return (<div className='col-md-9  '>
+                return (<div className='col-md-12  '>
                   <div className='card p-3  bg-dark-subtle'>
                     <h5 className='text-primary'>{item.title}</h5>
                     <p>{item.company.name}</p>

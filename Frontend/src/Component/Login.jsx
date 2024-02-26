@@ -38,7 +38,7 @@ const Login = () => {
         method:'POST',
         body:JSON.stringify(values),
         headers:{
-          'Content-type':'application/json'
+          'Content-Type':'application/json'
         }
       });
 
@@ -97,7 +97,7 @@ const Login = () => {
             </div>
         </div>
         <div className='col-md-5 '>
-          <img className='img-fluid '  src="https://img.freepik.com/premium-vector/illustration-vector-graphic-cartoon-character-login_516790-1261.jpg" alt="" />
+          <img className='img-fluid 'src="https://img.freepik.com/premium-vector/illustration-cartoon-female-user-entering-login_241107-682.jpg" alt="" />
 
         </div>
     </div>
