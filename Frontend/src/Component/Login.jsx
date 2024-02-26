@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom'
 import * as Yup from 'yup';
 import { useNavigate } from 'react-router-dom';
 import useUserContext from '../UserContext';
-
+import { GoogleOAuthProvider,GoogleLogin } from '@react-oauth/google';
+import { jwtDecode } from "jwt-decode";
 
 
 const LoginSchema=Yup.object().shape({
@@ -74,6 +75,17 @@ const Login = () => {
                     <input type="password"  className='form-control border border-secondary p-2 border border-dark' placeholder=' Password' id='password'  onChange={loginForm.handleChange} value={loginForm.values.password}/>&nbsp;
                     <input type="checkbox" className='mt-3 mb-3 mx-2 p-2'  /><label className='' htmlFor="remember">Remember me</label>
                     <button className='btn btn-primary w-100'>Login</button>&nbsp;
+                    <GoogleOAuthProvider clientId="675684362324-0ptp96dh2s0162qd0dbhdfepgmgc07n4.apps.googleusercontent.com">
+                    <GoogleLogin 
+                      onSuccess={credentialResponse => {
+                        const decoded = jwtDecode(credentialResponse.credential);
+                        console.log(decoded);
+                      }}
+                      onError={() => {
+                        console.log('Login Failed');
+                      }}
+                    />
+                    </GoogleOAuthProvider>
                     <p className='text-center mt-3'>Don't Have an Account ?  <a className=" text-decoration-none" href="/Signup">Signup</a></p>
                    
 

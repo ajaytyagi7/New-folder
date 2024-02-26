@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom'
 import * as Yup from 'yup';
 import useCompanyContext from '../CompanyContext';
 import { useNavigate } from 'react-router-dom';
+import { GoogleOAuthProvider,GoogleLogin } from '@react-oauth/google';
+import { jwtDecode } from "jwt-decode";
 
 
 const CompanyLoginSchema=Yup.object().shape({
@@ -72,7 +74,18 @@ const CompanyLogin = () => {
                     <input type="text"  className='form-control border border-secondary p-2 border border-dark' placeholder=' Password' id='password'  onChange={CompanyLoginForm.handleChange} value={CompanyLoginForm.values.password}/>&nbsp;
                     <input type="checkbox" className='mt-3 mb-3 p-2'  /><label className='mx-2' htmlFor="remember">Remember me</label>
                     <button className='btn btn-primary w-100 mb-2'>Login</button>&nbsp;
-                    <p className='text-center'>Don't Have an Account ?<Link className=" text-decoration-none  " to={'/CompanySignup'}> Sign Up</Link></p>
+                    <GoogleOAuthProvider clientId="675684362324-0ptp96dh2s0162qd0dbhdfepgmgc07n4.apps.googleusercontent.com">
+                    <GoogleLogin 
+                      onSuccess={credentialResponse => {
+                        const decoded = jwtDecode(credentialResponse.credential);
+                        console.log(decoded);
+                      }}
+                      onError={() => {
+                        console.log('Login Failed');
+                      }}
+                    />
+                    </GoogleOAuthProvider>
+                    <p className='text-center mt-3'>Don't Have an Account ?<Link className=" text-decoration-none  " to={'/CompanySignup'}> Sign Up</Link></p>
 
                     
                     </form> 

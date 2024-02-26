@@ -4,6 +4,8 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { enqueueSnackbar } from 'notistack';
 import { useNavigate } from 'react-router-dom'
+import { GoogleOAuthProvider,GoogleLogin } from '@react-oauth/google';
+import { jwtDecode } from "jwt-decode";
 
 const CompanySignupSchema = Yup.object().shape({
   owner: Yup.string().required('Name is Required ').min(4, 'Name is too short'),
@@ -85,7 +87,18 @@ const CompanySignup = () => {
                         <input type="password" className='form-control  border border-secondary p-2 border border-dark '  placeholder=' Confirm Password' id='confirm' onChange={CompanySignup.handleChange} value={CompanySignup.values.confirm} />&nbsp;
 
                         <button className='btn btn-primary w-100 mb-2' >Sign Up</button>
-                       <p className='text-center'>All Ready Have a Register ? <Link className='text-decoration-none' to={'/CompanyLogin'}> Log In</Link></p>
+                        <GoogleOAuthProvider clientId="675684362324-0ptp96dh2s0162qd0dbhdfepgmgc07n4.apps.googleusercontent.com">
+                    <GoogleLogin 
+                      onSuccess={credentialResponse => {
+                        const decoded = jwtDecode(credentialResponse.credential);
+                        console.log(decoded);
+                      }}
+                      onError={() => {
+                        console.log('Login Failed');
+                      }}
+                    />
+                    </GoogleOAuthProvider>
+                       <p className='text-center mt-3'>All Ready Have a Register ? <Link className='text-decoration-none' to={'/CompanyLogin'}> Log In</Link></p>
 
                     </form>
 
