@@ -25,11 +25,11 @@ const InterviewDetail = () => {
       if(interviewData !==null){
         return <div >
           <div className='container-fluid row'>
-            <div className=' bg-dark-subtle p-4 mt-5 w-75 mx-auto '>
-              <div className='row'>
-                <div className='col-md-8 p-4'>
+            <div className=' shadow p-4 mt-5 w-75 mx-auto '>
+              <div className='row '>
+                <div className='col-md-8 p-4 '>
                     <div>
-                      <h5 className='fw-bold'>{interviewData.title}</h5>
+                      <h5 className='fw-bold text-primary'>{interviewData.title}</h5>
                       <p>{interviewData.company.name}</p>
                       <p>{interviewData.experience}</p>
                       <p><i class="fa-solid fa-location-dot"></i> {interviewData.address}</p>

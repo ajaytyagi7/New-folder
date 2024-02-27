@@ -78,7 +78,7 @@ const Navbar = () => {
 
             <li className="nav-item">
                 <NavLink className="nav-link" to="/Signup">
-                  <p className=' text-dark btn btn-warning'>Sign Up</p>
+                  <p className=' text-dark btn btn-warning nav-hover'>Sign Up</p>
                 </NavLink>
               </li>
              </>
@@ -86,7 +86,7 @@ const Navbar = () => {
               <li className="nav-item">
                 <NavLink className="nav-link" to="">
                   <div>
-                    <Link className='text-decoration-none ' to={'/CompanySignup'}> <button className='btn btn-secondary float-end'>Hire </button></Link>
+                    <Link className='text-decoration-none ' to={'/CompanySignup'}> <button className='btn btn-secondary nav-hover float-end'>Hire </button></Link>
 
                   </div>
                 </NavLink>

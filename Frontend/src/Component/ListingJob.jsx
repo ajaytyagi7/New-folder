@@ -132,10 +132,10 @@ const ListingJob = () => {
   }, [])
 
   return (
-    <div className='container'>
+    <div className='container '>
       <div className='d-flex mt-3 w-50' style={{ position: 'relative', left: 400 }}>
         <input type="text" ref={searchRef} className='form-control' placeholder='Search job....' />
-        <button className='btn btn-primary' onClick={searchJob}>Search</button>
+        <button className='btn btn-primary ' onClick={searchJob}>Search</button>
       </div>
       <div className='container-fluid'>
         <div className='row'>
@@ -182,13 +182,13 @@ const ListingJob = () => {
             <div className='row gy-4'>
               {joblist.map((item) => {
                 return (<div className='col-md-12  '>
-                  <div className='card p-3  bg-dark-subtle'>
+                  <div className='card boder-0 shadow p-4  '>
                     <h5 className='text-primary'>{item.title}</h5>
                     <p>{item.company.name}</p>
                     <p><i class="fa-solid fa-location-dot"></i> {item.address}</p>
-                    <h6>₹{item.salary}</h6>
+                    <h6><i class="fa-solid fa-wallet"></i> ₹{item.salary}</h6>
                     <div className='d-flex'>
-                      <p>{item.experience}</p>
+                      <p><i class="fa-solid fa-calendar"></i> {item.experience}</p>
                       <p className='mx-4'>{item.jobtype}</p>
                     </div>
 

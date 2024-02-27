@@ -35,7 +35,7 @@ const Home = () => {
     <div className='container-fluid'>
       <header className='text-white header p-5'>
         <div >
-          <h1 className='  fw-bold display-1'>Your Dream <br />
+          <h1 className='  fw-bold display-1 tracking-in-contract'>Your Dream <br />
             Job is Waiting</h1>
         </div>
         
@@ -64,21 +64,21 @@ const Home = () => {
         </div>
       </div>
 
-      <div className=' container text-center mt-4 overflow-hidden '>
-        <div className='row gx-1 ' style={{ gap: 20 }}>
-          <div className='card col home-card'>
+      <div className=' container text-center mt-4  overflow-hidden '>
+        <div className='row g-1' >
+          <div className='card col-md-3 home-card'>
             <img className='img-fluid'  src="https://img.freepik.com/premium-photo/hand-holding-silver-pen-against-grey-background-with-vignette_1134-82543.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais" alt="" />
             <h5 className='mt-2'>Design & Creative</h5>
           </div>
-          <div className='card col home-card'>
+          <div className='card col-md-3 home-card'>
             <img className='img-fluid'  src="https://img.freepik.com/free-photo/side-view-man-working-desk_23-2149930938.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais" alt="" />
             <h5 className='mt-2'>Design & Development</h5>
           </div>
-          <div className='card col home-card'>
+          <div className='card col-md-3 home-card'>
             <img className='img-fluid'  src="https://img.freepik.com/free-photo/medium-shot-woman-working-laptop_23-2150323516.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais" alt="" />
             <h5 className='mt-2'>Web Development</h5>
           </div>
-          <div className='card col home-card'>
+          <div className='card col-md-3 home-card'>
             <img className='img-fluid'  src="https://img.freepik.com/free-photo/front-view-pretty-woman-showing-diagrams-working-office_140725-109240.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais" alt="" />
             <h5 className='mt-2'>Sales And Marketing</h5>
           </div>
