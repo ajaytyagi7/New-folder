@@ -63,7 +63,7 @@ const Login = () => {
   return (
     <div className='container-fluid row '>
         <div className='col-md-4 mx-auto py-5 '>
-            <div className=' mt-5'>
+            <div className=' mt-3'>
                 <div className='card-body  mt-2'>
                    <form className='rounded p-4 bg-white shadow' onSubmit={loginForm.handleSubmit}>
                     <h1 className='text-center fw-bold'>Login</h1>
@@ -96,7 +96,7 @@ const Login = () => {
 
             </div>
         </div>
-        <div className='col-md-5 '>
+        <div className='col-md-6 '>
           <img className='img-fluid 'src="https://img.freepik.com/premium-vector/illustration-cartoon-female-user-entering-login_241107-682.jpg" alt="" />
 
         </div>

@@ -93,8 +93,8 @@ const CompanyLogin = () => {
 
             </div>
         </div>
-        <div className='col-md-6 py-5'>
-          <img className='img-fluid'  src="" alt="" />
+        <div className='col-md-6 '>
+          <img className='img-fluid'  src="https://img.freepik.com/premium-vector/illustration-cartoon-female-user-entering-login_241107-682.jpg" alt="" />
 
         </div>
     </div>

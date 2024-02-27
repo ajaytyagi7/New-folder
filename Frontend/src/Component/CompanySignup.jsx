@@ -64,13 +64,13 @@ const CompanySignup = () => {
       }
       );
   return (
-    <div className='container-fluid row  mx-5'>
-        <div className='col-md-5 mx-auto py-3'>
+    <div className='container-fluid row  mx-5 '>
+        <div className='col-md-5 mx-auto py-1'>
             
-                <div className='card-body p-4 '>
-                    <form className='rounded p-4 bg-white shadow ' onSubmit={CompanySignup.handleSubmit}>
+                <div className='card-body p-2 '>
+                    <form className='rounded p-3 bg-white shadow ' onSubmit={CompanySignup.handleSubmit}>
                         <h1 className='text-center fw-bold'>Resgistration</h1>
-                        <hr />
+                  
                         <span className='ms-4 fs-6 text-danger'>{ CompanySignup.touched.owner && CompanySignup.errors.owner}</span>
                         <input type="text" className='form-control  border border-secondary p-2  border border-dark '  placeholder=' Owner Name' id='owner' onChange={CompanySignup.handleChange} value={CompanySignup.values.owner} />&nbsp;
 
@@ -107,8 +107,8 @@ const CompanySignup = () => {
             </div>
 
         
-        <div className='col-md-6 py-5'>
-          <img className='img-fluid'  src="https://media.istockphoto.com/id/1226932404/vector/password-login-verification-code-push-message-or-sms-for-2fa-authentication-notice-with.jpg?s=612x612&w=0&k=20&c=9RFrAYp-KJhWkCHx6ZS61YwQgUiPJNiIBVbJYtwSGx0=" alt="" />
+        <div className='col-md-6 py-5 container-fluid'>
+          <img className='img-fluid'  src="https://static.vecteezy.com/system/resources/previews/003/689/226/non_2x/online-registration-or-sign-up-login-for-account-on-smartphone-app-user-interface-with-secure-password-mobile-application-for-ui-web-banner-access-cartoon-people-illustration-vector.jpg" alt="" />
 
         </div>
     </div>

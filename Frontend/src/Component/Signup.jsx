@@ -104,7 +104,7 @@ const Signup = () => {
     <div className='container-fluid row  mb-5'>
 
 
-      <div className='col-md-5 mx-auto  py-4 '>
+      <div className='col-md-5 mx-auto  py-3 '>
         <div className=' rounded-3 '>
           <div className='card-body '>
             <form className='bg-white p-4 rounded shadow' onSubmit={signupForm.handleSubmit}  >
@@ -145,8 +145,8 @@ const Signup = () => {
 
         </div>
       </div>
-      <div className='col-md-6 py-8'>
-        <img className='img-fluid' src="" alt="" />
+      <div className='col-md-5 py-8'>
+        <img className='img-fluid' src="https://media.istockphoto.com/id/1305268276/vector/registration-abstract-concept-vector-illustration.jpg?s=612x612&w=0&k=20&c=nfvUbHjcNDVIPdWkaxGx0z0WZaAEuBK9SyG-aIqg2-0=" alt="" />
 
       </div>
     </div>
