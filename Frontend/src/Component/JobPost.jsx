@@ -65,7 +65,7 @@ const JobPost = () => {
                     <div className=''>
                         <div className='card-body'>
                             <form className='rounded bg-white shadow   p-4 bg-white' onSubmit={JobPostForm.handleSubmit} >
-                                <h1 className='text-center fw-bold'>Post Job</h1> <hr className='text-white' /><hr />
+                                <h2 className='text-center fw-bold'>Post Job</h2> <hr className='text-white' /><hr />
                                 <span className='ms-4 fs-6 text-danger'>{JobPostForm.errors.email}</span>
                                 <input type="text" className='form-control mb-3 border border-secondary p-3' placeholder='Job Title' id='title' onChange={JobPostForm.handleChange} value={JobPostForm.values.title} />
 
@@ -122,7 +122,7 @@ const JobPost = () => {
                         </div>
                     </div>
                 </div>
-                <div className='col-md-5 mt-5'>
+                <div className='col-md-4 mt-5'>
                    <Link to={'/ManageInterviewData'}> <button className='btn btn-primary'>Manage Data</button></Link>
                     <img  className='img-fluid  bg-white' src="https://img.freepik.com/free-vector/businessman-choosing-options-computer_1262-19222.jpg?w=826&t=st=1708793959~exp=1708794559~hmac=4ef6d01b4810a2d3537a22b71aea36eaee1f487c300819648f85791f8a223000" alt="" />
                     <img className='img-fluid' src="https://img.freepik.com/free-vector/recruit-agent-analyzing-candidates_74855-4565.jpg?w=1060&t=st=1708794073~exp=1708794673~hmac=61f2255663f3b74311551f1d8dde8cce43b287336b8eb6ad16e7cb84719b91a2" alt="" />
