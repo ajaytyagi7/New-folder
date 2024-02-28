@@ -133,9 +133,13 @@ const ListingJob = () => {
 
   return (
     <div className='container '>
-      <div className='d-flex mt-3 w-50' style={{ position: 'relative', left: 400 }}>
+      <div className='row mx-auto mt-3 w-50' >
+        <div className='col-md-10'>
         <input type="text" ref={searchRef} className='form-control' placeholder='Search job....' />
+        </div>
+        <div className='col-md-2'>
         <button className='btn btn-primary ' onClick={searchJob}>Search</button>
+        </div>
       </div>
       <div className='container-fluid'>
         <div className='row'>
