@@ -124,9 +124,9 @@ const Signup = () => {
               <input type="password" className='form-control border border-secondary p-2 border border-dark' placeholder='Confirm Password' id='confirm' onChange={signupForm.handleChange} value={signupForm.values.confirm} />&nbsp;
 
               <button className='btn btn-primary mt-3 w-100'  >Sign Up</button>&nbsp;
-              <div className=''>
+              
               <GoogleOAuthProvider clientId="196496969029-n46m3397qmbsuar3boobrodpd45crveb.apps.googleusercontent.com">
-                <GoogleLogin
+               <GoogleLogin
                   onSuccess={credentialResponse => {
                     const decoded = jwtDecode(credentialResponse.credential);
                     console.log(decoded);
@@ -136,8 +136,9 @@ const Signup = () => {
                     console.log('Login Failed');
                   }}
                 />
+                
               </GoogleOAuthProvider>
-              </div>
+              
 
               <p className='text-center mt-3'> Already Have a Register ?<Link to={'/Login'} className='text-decoration-none ' > Log In</Link></p>
             </form>

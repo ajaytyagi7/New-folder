@@ -118,4 +118,7 @@
       opacity: 1;
     }
   }
-  
+  .googlesignup-btn{
+    width: 800px;
+    margin-left: 35%;
+  }
