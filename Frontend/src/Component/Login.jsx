@@ -74,8 +74,8 @@ const Login = () => {
                     <span className='ms-4 fs-6 text-danger'>{  loginForm.errors.password}</span>
                     <input type="password"  className='form-control border border-secondary p-2 border border-dark' placeholder=' Password' id='password'  onChange={loginForm.handleChange} value={loginForm.values.password}/>&nbsp;
                     <input type="checkbox" className='mt-3 mb-3 mx-2 p-2'  /><label className='' htmlFor="remember">Remember me</label>
-                    <button className='btn btn-primary w-100'>Login</button>&nbsp;
-                    <GoogleOAuthProvider clientId="675684362324-0ptp96dh2s0162qd0dbhdfepgmgc07n4.apps.googleusercontent.com">
+                    <button className='btn btn-primary w-100'>Login</button>&nbsp;<hr />
+                    <GoogleOAuthProvider clientId="196496969029-n46m3397qmbsuar3boobrodpd45crveb.apps.googleusercontent.com">
                     <GoogleLogin 
                       onSuccess={credentialResponse => {
                         const decoded = jwtDecode(credentialResponse.credential);

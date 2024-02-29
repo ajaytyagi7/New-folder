@@ -124,8 +124,8 @@ const Signup = () => {
               <input type="password" className='form-control border border-secondary p-2 border border-dark' placeholder='Confirm Password' id='confirm' onChange={signupForm.handleChange} value={signupForm.values.confirm} />&nbsp;
 
               <button className='btn btn-primary mt-3 w-100'  >Sign Up</button>&nbsp;
-              <div className='w-100'>
-              <GoogleOAuthProvider clientId="675684362324-0ptp96dh2s0162qd0dbhdfepgmgc07n4.apps.googleusercontent.com">
+              <div className=''>
+              <GoogleOAuthProvider clientId="196496969029-n46m3397qmbsuar3boobrodpd45crveb.apps.googleusercontent.com">
                 <GoogleLogin
                   onSuccess={credentialResponse => {
                     const decoded = jwtDecode(credentialResponse.credential);
