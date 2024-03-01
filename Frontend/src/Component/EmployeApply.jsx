@@ -36,12 +36,12 @@ const EmployeApply = () => {
         }
     })
   return (
-    <div className='container-fluid row'>
-        <div className='col-md-6 p-5 mx-auto '>
+    <div className='container-fluid row mb-4'>
+        <div className='col-md-6 mt-2 mx-auto '>
             <div className=''>
                 <div className='card-body'>
                     <form className='bg-white shadow p-4' onSubmit={EmployeApply.handleSubmit}>
-                        <h1 className='text-center'>Apply Interview</h1> <hr />
+                        <h2 className='text-center fw-bold'>Apply Interview</h2> <hr />
                         <span className='ms-4 fs-6 text-danger'>{ EmployeApply.touched.name && EmployeApply.errors.name}</span>
                         <input type="text" className='form-control mb-3' placeholder='Enter your Name' id='name' onChange={EmployeApply.handleChange} value={EmployeApply.values.name} />
                     

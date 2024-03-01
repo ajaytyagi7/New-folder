@@ -70,7 +70,7 @@ const Signup = () => {
     if (emailRes.status == 200) {
 
       const userData = await emailRes.json();
-      enqueueSnackbar('Loggedin Successfully ', { variant: 'success' });
+      enqueueSnackbar('Signup Successfully ', { variant: 'success' });
       sessionStorage.setItem('user', JSON.stringify(userData));
       setuserloggedIn(true);
       navigate('/')

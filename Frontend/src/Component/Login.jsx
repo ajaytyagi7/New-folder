@@ -58,6 +58,44 @@ const Login = () => {
     },
   });
 
+  const googleLogin = async (credentialResponse) => {
+
+    const emailRes = await fetch(`${import.meta.env.VITE_API_URL}/user/getbyemail/${credentialResponse.email}`);
+
+    if (emailRes.status == 200) {
+
+      const userData = await emailRes.json();
+      enqueueSnackbar('Loggedin Successfully ', { variant: 'success' });
+      sessionStorage.setItem('user', JSON.stringify(userData));
+      setuserloggedIn(true);
+      navigate('/')
+    } else {
+
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/user/add`, {
+        method: 'POST',
+        body: JSON.stringify({
+          name: credentialResponse.name,
+          email: credentialResponse.email,
+          loginType: 'google'
+        }),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+
+      if (res.status == 200) {
+        enqueueSnackbar('Registered Successfully ', { variant: 'success' });
+        const data = await res.json();
+        sessionStorage.setItem('user', JSON.stringify(data));
+        setuserloggedIn(true);
+        navigate('/')
+      } else {
+        enqueueSnackbar('Something went wrong', { variant: 'error' });
+      }
+    }
+
+  }
+
 
   
   return (
@@ -80,6 +118,7 @@ const Login = () => {
                       onSuccess={credentialResponse => {
                         const decoded = jwtDecode(credentialResponse.credential);
                         console.log(decoded);
+                        googleLogin(decoded)
                       }}
                       onError={() => {
                         console.log('Login Failed');

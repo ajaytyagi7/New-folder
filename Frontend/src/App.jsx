@@ -20,6 +20,7 @@ import { CompanyProvider } from "./CompanyContext";
 import Footer from "./Component/Footer";
 import Logout from "./Component/Logout";
 import { UserProvider } from "./UserContext";
+import UserAuth from "./auth/userAuth";
 
 const App = () => {
 
@@ -43,7 +44,7 @@ const App = () => {
                 <Route path='JobPost' element={<JobPost />} />
                 <Route path='ListingJob' element={<ListingJob />} />
                 <Route path='ListingJob/:title/:location' element={<ListingJob />} />
-                <Route path='InterviewDetail' element={<InterviewDetail />} />
+                <Route path='InterviewDetail' element={<UserAuth><InterviewDetail /></UserAuth> }/>
                 <Route path='ManageInterviewData' element={<ManageInterviewData />} />
                 <Route path='EmployeApply' element={<EmployeApply />} />
                 <Route path='ManageEmployeData' element={<ManageEmployeData />} />
