@@ -1,8 +1,12 @@
 import { enqueueSnackbar } from 'notistack';
 import React, { useEffect, useRef, useState } from 'react'
-import { Navigate } from 'react-router-dom';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 const UserAuth = ({ children }) => {
+
+    const navigate = useNavigate();
+    
+    
     const hasRun = useRef(false);
     // console.log(sessionStorage.getItem('user'));
     const [currentUser, setCurrentUser] = useState(JSON.parse(sessionStorage.getItem('user')));
@@ -19,9 +23,12 @@ const UserAuth = ({ children }) => {
 
     if (currentUser !== null) {
         return children;
+    }else{
+        // sessionStorage.setItem('oldUrl', '/JobPost')
+        navigate('/Login');
     }
+    
 
-    return <Navigate to='/Login' />
 
 }
 
