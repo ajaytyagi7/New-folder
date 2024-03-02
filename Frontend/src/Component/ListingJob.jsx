@@ -132,12 +132,12 @@ const ListingJob = () => {
   }, [])
 
   return (
-    <div className='container '>
+    <div className='container bg-secondary-subtle'>
       <div className='row mx-auto mt-3 w-50' >
-        <div className='col-md-10'>
+        <div className='col-md-10 mt-3'>
         <input type="text" ref={searchRef} className='form-control' placeholder='Search job....' />
         </div>
-        <div className='col-md-2'>
+        <div className='col-md-2 mt-3'>
         <button className='btn btn-primary ' onClick={searchJob}>Search</button>
         </div>
       </div>
