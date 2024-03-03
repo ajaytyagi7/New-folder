@@ -181,7 +181,7 @@ const Home = () => {
       </motion.div>
 
       <div className='container py-2 ' style={{ gap: 20 }}>
-        <h3 className='fw-bold mt-5'>We Are Supported By..</h3>
+        <h3 className='fw-bold mt-5 mb-4'>We Are Supported By..</h3>
         <Swiper
           slidesPerView={5}
           spaceBetween={30}
@@ -245,7 +245,7 @@ const Home = () => {
        initial='hidden'
        whileInView={"show"}
        viewport={{once:false,amount:0.7}}
-      className='container p-4'>
+      className='container p-4 mt-5'>
         <div className='row'>
           <div className='  col-md-6'>
             <img className='w-100' src="https://img.freepik.com/free-photo/creative-people-working-office_23-2147656715.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=sph" alt="" />

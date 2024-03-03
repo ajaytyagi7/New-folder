@@ -63,12 +63,20 @@ const InterviewDetail = () => {
             <div className='col-md-12 p-3 '>
               <div>
                 <h5>Job Details</h5><hr />
+                <div className='row'>
+                  <div className='col-md-8'>
                 <h6 className='fw-bold'><i class="fa-regular fa-money-bill"></i> Pay</h6>
                 <div className='mx-3 bg-dark-subtle px-2 mb-4' style={{ width: 140 }}>₹{interviewData.salary}</div>
                 <h6 className='fw-bold'><i class="fa-solid fa-briefcase"></i>Experience</h6>
                 <div className='mx-3 bg-dark-subtle px-2 mb-4' style={{ width: 80 }}>{interviewData.experience}</div>
                 <h6 className='fw-bold'><i class="fa-solid fa-computer"></i> Job Type</h6>
                 <div className='mx-3 bg-dark-subtle px-2 mb-4' style={{ width: 80 }}>{interviewData.jobtype}</div><hr />
+                  </div>
+                  <div className='col-md-4 '>
+                    <img className='img-fluid' src="https://uploads-ssl.webflow.com/625545453f4b9f0fab8d8b9c/625d444a76661e5a1702043b_Untitled-1.gif" alt="" />
+                  </div>
+                </div>
+                
                 <h5 >Benefits</h5>
                 <p>{interviewData.benefits}</p><hr />
                 <h5>Job Required</h5>

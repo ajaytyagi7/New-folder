@@ -118,7 +118,7 @@ const Login = () => {
         <div className=' mt-3'>
           <div className='card-body  mt-2'>
             <form className='rounded p-4 bg-white shadow' onSubmit={loginForm.handleSubmit}>
-              <h1 className='text-center fw-bold'>Login</h1>
+              <h1 className='text-center fw-bold fs-1 '><i class="fa-solid fa-user"></i></h1>
               <hr />
               <span className='ms-4 fs-6 text-danger'>{loginForm.errors.email}</span>
               <input type="text" className='form-control border border-secondary p-2 border border-dark' placeholder=' Email Address' id='email' onChange={loginForm.handleChange} value={loginForm.values.email} />&nbsp;
@@ -149,8 +149,8 @@ const Login = () => {
 
         </div>
       </div>
-      <div className='col-md-6 '>
-        <img className='img-fluid ' src="https://img.freepik.com/premium-vector/illustration-cartoon-female-user-entering-login_241107-682.jpg" alt="" />
+      <div className='col-md-5 '>
+        <img className='img-fluid ' src="https://img.freepik.com/free-vector/forgot-password-concept-illustration_114360-1095.jpg?t=st=1709443939~exp=1709447539~hmac=b4037b99ac762b610ac2f67cc5d867ec98724441471dbee122cc20de9260eb9f&w=740" alt="" />
 
       </div>
     </div>
