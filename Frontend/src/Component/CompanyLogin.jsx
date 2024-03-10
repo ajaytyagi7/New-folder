@@ -9,6 +9,7 @@ import { GoogleOAuthProvider,GoogleLogin } from '@react-oauth/google';
 import { jwtDecode } from "jwt-decode";
 
 
+
 const CompanyLoginSchema=Yup.object().shape({
   email:Yup.string().email('Invalid Email').required('Password Require'),
   password:Yup.string().required('Password is Require').min(8,'Password is too short'),
@@ -58,6 +59,51 @@ const CompanyLogin = () => {
     },
   });
 
+  const googleLogin = async (credentialResponse) => {
+
+    const emailRes = await fetch(`${import.meta.env.VITE_API_URL}/company/getbyemail/${credentialResponse.email}`);
+
+    if (emailRes.status == 200) {
+
+      const userData = await emailRes.json();
+      enqueueSnackbar('Loggedin Successfully ', { variant: 'success' });
+      sessionStorage.setItem('company', JSON.stringify(userData));
+      setCompanyLoggedin(true);
+      const oldUrl = sessionStorage.getItem('oldUrl');
+      console.log(oldUrl);
+      if (oldUrl !== null) {
+        navigate(oldUrl);
+        sessionStorage.removeItem('oldUrl');
+      } else {
+        navigate('/JobPost')
+      }
+    } else {
+
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/company/add`, {
+        method: 'POST',
+        body: JSON.stringify({
+          name: credentialResponse.name,
+          email: credentialResponse.email,
+          loginType: 'google'
+        }),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+
+      if (res.status == 200) {
+        enqueueSnackbar('Registered Successfully ', { variant: 'success' });
+        const data = await res.json();
+        sessionStorage.setItem('company', JSON.stringify(data));
+        setCompanyLoggedin(true);
+        navigate('/JobPost')
+      } else {
+        enqueueSnackbar('Something went wrong', { variant: 'error' });
+      }
+    }
+
+  }
+
 
   
   return (
@@ -74,11 +120,12 @@ const CompanyLogin = () => {
                     <input type="text"  className='form-control border border-secondary p-2 border border-dark' placeholder=' Password' id='password'  onChange={CompanyLoginForm.handleChange} value={CompanyLoginForm.values.password}/>&nbsp;
                     <input type="checkbox" className='mt-3 mb-3 p-2'  /><label className='mx-2' htmlFor="remember">Remember me</label>
                     <button className='btn btn-primary w-100 mb-2'>Login</button>&nbsp;
-                    <GoogleOAuthProvider clientId="675684362324-0ptp96dh2s0162qd0dbhdfepgmgc07n4.apps.googleusercontent.com">
+                    <GoogleOAuthProvider clientId="196496969029-n46m3397qmbsuar3boobrodpd45crveb.apps.googleusercontent.com">
                     <GoogleLogin 
                       onSuccess={credentialResponse => {
                         const decoded = jwtDecode(credentialResponse.credential);
                         console.log(decoded);
+                        googleLogin(decoded)
                       }}
                       onError={() => {
                         console.log('Login Failed');

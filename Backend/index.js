@@ -26,6 +26,8 @@ app.use('/apply',EmployeApplyRouter);
 app.use('/contact',ContactRouter);
 
 
+// app.use(express.static)
+
 
 
 app.listen(port,() =>{console.log('Server Started !!')});
