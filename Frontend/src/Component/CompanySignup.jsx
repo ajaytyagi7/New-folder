@@ -6,7 +6,6 @@ import { enqueueSnackbar } from 'notistack';
 import { useNavigate } from 'react-router-dom'
 import { GoogleOAuthProvider,GoogleLogin } from '@react-oauth/google';
 import { jwtDecode } from "jwt-decode";
-import { useCompanyContext } from '../CompanyContext';
 
 const CompanySignupSchema = Yup.object().shape({
   owner: Yup.string().required('Name is Required ').min(4, 'Name is too short'),
@@ -24,7 +23,6 @@ const CompanySignupSchema = Yup.object().shape({
 const CompanySignup = () => {
 
   const navigate = useNavigate();
-  const { setCompanyLoggedin } = useCompanyContext();
 
 
     const CompanySignup = useFormik({
@@ -75,7 +73,7 @@ const CompanySignup = () => {
           const userData = await emailRes.json();
           enqueueSnackbar('Signup Successfully ', { variant: 'success' });
           sessionStorage.setItem('company', JSON.stringify(userData));
-          setCompanyLoggedin(true);
+          setuserloggedIn(true);
           const oldUrl = sessionStorage.getItem('oldUrl');
           console.log(oldUrl);
           if (oldUrl !== null) {
@@ -102,7 +100,7 @@ const CompanySignup = () => {
             enqueueSnackbar('Registered Successfully ', { variant: 'success' });
             const data = await res.json();
             sessionStorage.setItem('company', JSON.stringify(data));
-            setCompanyLoggedin(true);
+            setuserloggedIn(true);
             navigate('/JobPost')
           } else {
             enqueueSnackbar('Something went wrong', { variant: 'error' });

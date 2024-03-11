@@ -65,7 +65,7 @@ const contactSchema=Yup.object().shape({
                     <span className='ms-4 fs-6 text-danger'>{  contactForm.errors.message}</span>
                    <textarea id="message" className="form-control w-100  bg-white-subtle" placeholder="Write your message here..." onChange={contactForm.handleChange} value={contactForm.values.message}></textarea>
                     <button className='btn btn-primary w-100 mt-4 '>Send Message</button>
-                    <p className='fw-bold text-white text-center mt-3'>Contact No- 📞 1800-654-123</p>
+                    <p className='fw-bold text-center mt-3'>Contact No- 📞 1800-654-123</p>
 
                     
                 </div>
