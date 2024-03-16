@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className='container-fluid  p-5'>
         <div className='row mb-4 '>
-            <div className='col-md-6 shadow  bg-secondary-subtle'>
+            <div className='col-md-7 shadow  bg-secondary-subtle'>
               <h1 className='text-center fw-bold mt-5'>About Us</h1><hr />
               <p className='p-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut esse voluptatibus a cupiditate, quae debitis eius incidunt voluptates! Similique obcaecati eligendi a maxime aut distinctio beatae, fugiat, expedita eos ipsum veritatis quisquam atque nisi deleniti adipisci eaque ab sunt explicabo? Beatae quo officiis ducimus? Reprehenderit distinctio inventore, fugiat veniam ex illo tempore. Sunt consectetur totam tenetur, iste expedita ipsa eveniet natus error doloribus explicabo quae temporibus ut, voluptatem consequuntur dolor id itaque ullam ex. Dicta, cupiditate. Vitae dignissimos perferendis placeat alias officiis nam magni, amet fugiat sequi, distinctio dolorem assumenda sint neque consequuntur rerum quidem error. Repudiandae nisi esse ullam illo. Excepturi, sed molestiae iusto mollitia harum architecto deserunt aut minima tempora quibusdam nobis voluptatem vero repudiandae. At tempore dolor nemo quaerat, voluptatibus suscipit? Consequatur, in. In eveniet voluptatem unde temporibus quod placeat ipsam minima adipisci saepe quis accusamus labore delectus ea natus mollitia facere at aliquid veritatis sequi, iusto nam veniam asperiores ex? Aspernatur harum incidunt beatae voluptatem nisi minus quisquam neque quasi inventore officiis corporis libero architecto recusandae, optio sint quidem quae animi ut sequi nulla mollitia placeat magni temporibus dolor? Eveniet omnis, maiores itaque corporis ducimus, quas cupiditate saepe eligendi obcaecati quibusdam molestias, nihil autem magnam voluptatum?</p>
             </div>
@@ -12,23 +12,42 @@ const About = () => {
               <img className='img-fluid' src="https://img.freepik.com/premium-vector/business-characters-teamwork-employees-vector-concept-business-character-manager_572288-2650.jpg?w=740" alt="" />
             </div>
         </div>
+        <div className='container-fluid'>
+          <div className="row">
+            <h2>Our Team</h2>
+            <div className="col-md-3">
+              <div className="">
+                <div className="card-body">
+                  <img className='img-fluid' src="https://img.freepik.com/free-photo/cheerful-indian-businessman-smiling-closeup-portrait-jobs-career-campaign_53876-129417.jpg?t=st=1710600421~exp=1710604021~hmac=f6f08b0cf966a1c61d1708f7f2ebf58bb67e3782cd1535e0c7d7ee2ada632975&w=996" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="">
+                <div className="card-body">
+                  <img className='img-fluid' src="https://img.freepik.com/free-photo/portrait-young-indian-top-manager-t-shirt-tie-crossed-arms-smiling-white-isolated-wall_496169-1513.jpg?t=st=1710600450~exp=1710604050~hmac=d1eb4b50e96715d0fe94a2c7bbc2711ffe33bcb5e13e1d820c5be2491816fb9f&w=996" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="rounded-pill">
+                <div className="card-body">
+                  <img className='img-fluid ' src="https://img.freepik.com/free-photo/young-handsome-man-wearing-casual-tshirt-blue-background-happy-face-smiling-with-crossed-arms-looking-camera-positive-person_839833-12963.jpg?t=st=1710600473~exp=1710604073~hmac=9d6907eb3bb398a47ee94d78cac8fee9ac0fad5d0cdcf469382c4f59f3a29c1e&w=996" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="">
+                <div className="card-body">
+                  <img className='img-fluid' src="https://img.freepik.com/free-photo/cheerful-curly-business-girl-wearing-glasses_176420-206.jpg?t=st=1710600500~exp=1710604100~hmac=0ce1238f722904100eb44d7e38a5e6e24d379473309ea29e33a31fa9046ef5e7&w=996" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <div className='row ' >
-          <h3 className='text-center fw-bold mb-3'>Our Team</h3>
-          <div className='col-md-3 card rounded-pill  home-card'>
-              <img img-fluid className='rounded-pill' src="https://img.freepik.com/free-photo/mand-holding-cup_1258-340.jpg?w=996&t=st=1708100312~exp=1708100912~hmac=d5a32c43998bd4657cec8959d9d1b9886a5040096c1b8521ba916fcbe988f2b4" alt="" />
-          </div>
-          <div className='col-md-3 card rounded-pill  home-card'>
-              <img className='rounded-pill' src="https://img.freepik.com/premium-photo/portrait-handsome-confident-arabian-indian-successful-businessman-entrepreneur-lawyer-formal-suit-sit-work-desk-with-laptop-modern-creative-office-looks-camera-smile-friendly_754108-887.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais" alt="" />
-          </div>
-          <div className='col-md-3 card rounded-pill  home-card'>
-              <img className='rounded-pill' src="https://img.freepik.com/free-photo/smiling-young-male-professional-standing-with-arms-crossed-while-making-eye-contact-against-isolated-background_662251-838.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais" alt="" />
-          </div>
-          <div className='col-md-3 card rounded-pill  home-card'>
-              <img className='rounded-pill' src="https://img.freepik.com/premium-photo/portrait-confident-young-arab-businessman-eyeglasses-standing-with-folded-arms_116547-46862.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais" alt="" />
-          </div>
         </div>
 
+       
         <div className='card p-3 mt-5 bg-dark-subtle '>
           <h3 className='fw-bold mb-3 p-2'>Our Company </h3>
           <p className='fw-bold'>Welcome to  OffBeatCampus, where we believe in connecting talent with opportunity to create a brighter future. With a passion for fostering career growth and building strong professional relationships, we are committed to being a trusted partner in your job search journey.

@@ -71,24 +71,45 @@ const Home = () => {
         </div>
       </motion.div>
 
-      <div className=' container text-center mt-4  overflow-hidden '>
+      <div className=' container text-center mt-4  '>
         <div className='row g-1' >
-          <div className='card col-md-3 home-card'>
-         <img className='img-fluid'  src="https://img.freepik.com/premium-photo/hand-holding-silver-pen-against-grey-background-with-vignette_1134-82543.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais" alt="" />
-            <h5 className='mt-2'>Design & Creative</h5>
-          
+          <div className=' col-md-3 home-card'>
+            <div className='card'>
+              <div className='card-body'>
+                <img className='img-fluid'  src="https://img.freepik.com/premium-photo/hand-holding-silver-pen-against-grey-background-with-vignette_1134-82543.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais" alt="" />
+                <h5 className='mt-2'>Design & Creative</h5>
+              </div>
+            </div>
           </div>
-          <div className='card col-md-3 home-card'>
-            <img className='img-fluid'  src="https://img.freepik.com/free-photo/side-view-man-working-desk_23-2149930938.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais" alt="" />
-            <h5 className='mt-2'>Design & Development</h5>
+          <div className=' col-md-3 home-card'>
+            <div className='card'>
+
+              <div className='card-body'>
+                <img className='img-fluid'  src="https://img.freepik.com/free-photo/side-view-man-working-desk_23-2149930938.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais" alt="" />
+
+                <h5 className='mt-2'>Design & Development</h5>
+                </div>
+            </div>
           </div>
-          <div className='card col-md-3 home-card'>
+          <div className=' col-md-3 home-card'>
+          <div className='card'>
+
+          <div className='card-body'>
+
             <img className='img-fluid'  src="https://img.freepik.com/free-photo/medium-shot-woman-working-laptop_23-2150323516.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais" alt="" />
             <h5 className='mt-2'>Web Development</h5>
+            </div>
+            </div>
           </div>
-          <div className='card col-md-3 home-card'>
+          <div className=' col-md-3 home-card'>
+          <div className='card'>
+
+          <div className='card-body'>
+
             <img className='img-fluid'  src="https://img.freepik.com/free-photo/front-view-pretty-woman-showing-diagrams-working-office_140725-109240.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais" alt="" />
             <h5 className='mt-2'>Sales And Marketing</h5>
+            </div>
+            </div>
           </div>
         </div>
         </div>
