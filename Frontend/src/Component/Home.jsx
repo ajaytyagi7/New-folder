@@ -229,6 +229,20 @@ const Home = () => {
           pagination={{
             clickable: true,
           }}
+          breakpoints={{
+            200: {
+              slidesPerView: 1,
+              spaceBetween: 30
+            },
+            550: {
+              slidesPerView: 3,
+              spaceBetween: 30
+            },
+            750: {
+              slidesPerView: 5,
+              spaceBetween: 30
+            },
+          }}
           autoplay={{
             delay: 2000,
             disableOnInteraction: false,
