@@ -74,7 +74,7 @@ const Home = () => {
       <div className=' container text-center mt-4  '>
         <div className='row g-1' >
           <div className=' col-md-3 home-card'>
-            <div className='card'>
+            <div className='shadow'>
               <div className='card-body'>
                 <img className='img-fluid'  src="https://img.freepik.com/premium-photo/hand-holding-silver-pen-against-grey-background-with-vignette_1134-82543.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais" alt="" />
                 <h5 className='mt-2'>Design & Creative</h5>
@@ -82,7 +82,7 @@ const Home = () => {
             </div>
           </div>
           <div className=' col-md-3 home-card'>
-            <div className='card'>
+            <div className='shadow'>
 
               <div className='card-body'>
                 <img className='img-fluid'  src="https://img.freepik.com/free-photo/side-view-man-working-desk_23-2149930938.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais" alt="" />
@@ -92,7 +92,7 @@ const Home = () => {
             </div>
           </div>
           <div className=' col-md-3 home-card'>
-          <div className='card'>
+          <div className='shadow'>
 
           <div className='card-body'>
 
@@ -102,7 +102,7 @@ const Home = () => {
             </div>
           </div>
           <div className=' col-md-3 home-card'>
-          <div className='card'>
+          <div className='shadow'>
 
           <div className='card-body'>
 
