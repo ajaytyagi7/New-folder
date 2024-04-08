@@ -114,7 +114,7 @@ const CompanySignup = () => {
             
                 <div className='card-body p-2 '>
                     <form className='rounded p-3 bg-white shadow ' onSubmit={CompanySignup.handleSubmit}>
-                        <h1 className='text-center fw-bold'>Resgistration</h1>
+                        <h1 className='text-center fw-bold'>Resgistration</h1><hr />
                   
                         <span className='ms-4 fs-6 text-danger'>{ CompanySignup.touched.owner && CompanySignup.errors.owner}</span>
                         <input type="text" className='form-control  border border-secondary p-2  border border-dark '  placeholder=' Owner Name' id='owner' onChange={CompanySignup.handleChange} value={CompanySignup.values.owner} />&nbsp;

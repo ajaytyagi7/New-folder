@@ -21,7 +21,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='col-md-3  bg-dark '>
-                <h4>Servive</h4>
+                <h4>Service</h4>
                 <div className='card-body '>
                     <Link  className='text-white text-decoration-none'>Job</Link><br />
                     <Link className='text-white text-decoration-none'>Interview</Link><br />

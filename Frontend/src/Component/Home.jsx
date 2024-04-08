@@ -120,7 +120,7 @@ const Home = () => {
            
           className='card col-md-6 bg-secondary-subtle  '>
             <h1 className='home-campus fw-bold'> Crack Off Campus <br />
-              Inetview</h1>
+              Inertview</h1>
             <h4>" Join our dynamic team!  We're on the lookout for passionate individuals ready to make
               an impact. Off-campus hiring is now in full swing!  Explore exciting opportunities and take the next step in your career journey with us. Apply today! #Hiring #OffCampusRecruitment #CareerOpportunities #JoinOurTeam"</h4>
           </div>
