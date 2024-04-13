@@ -37,7 +37,8 @@ const Navbar = () => {
 
               <li className="nav-item">
                 <NavLink className="nav-link" to="/Home">
-                  Home
+                <p className='text-dark'>Home</p>
+                  
                 </NavLink>
               </li>
 
@@ -46,17 +47,17 @@ const Navbar = () => {
 
               <li className="nav-item">
                 <NavLink className="nav-link" to="/ListingJob">
-                  Job
+                  <p className='text-dark'>Job</p>
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" to="/About">
-                  About Us
+                  <p className='text-dark'>About Us</p>
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" to="/Contact">
-                  Contact Us
+                  <p className='text-dark'>Contact Us</p>
                 </NavLink>
               </li>
 
@@ -67,18 +68,18 @@ const Navbar = () => {
               {userloggedIn ?
                <li className="nav-item">
                <NavLink className="nav-link " to="/Logout">
-                <button className='p-1 btn btn-danger'>Logout</button>
+                <button className='p-1 btn btn-danger button-nav-hire'>Logout</button>
                </NavLink>
              </li>:<>
              <li className="nav-item">
                 <NavLink className="nav-link " to="/Login">
-                 <p className='fs-4 text-dark'><i class="fa-solid fa-user"></i></p>
+                 <p className='fs-2 text-dark'><i class="fa-solid fa-user"></i></p>
                 </NavLink>
               </li>
 
             <li className="nav-item">
                 <NavLink className="nav-link" to="/Signup">
-                  <p className=' text-dark button-nav-signup'>Sign Up</p>
+                  <p className=' text-dark btn btn-primary button-nav-signup'>Sign Up</p>
                 </NavLink>
               </li>
              </>
