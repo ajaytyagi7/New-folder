@@ -110,7 +110,7 @@ const CompanySignup = () => {
       }
   return (
     <div className='container-fluid row  mx-5 '>
-        <div className='col-md-5 mx-auto py-1'>
+        <div className='col-md-5 mx-auto py-1 login-card'>
             
                 <div className='card-body p-2 '>
                     <form className='rounded p-3 bg-white shadow ' onSubmit={CompanySignup.handleSubmit}>

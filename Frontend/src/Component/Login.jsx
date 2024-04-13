@@ -115,7 +115,7 @@ const Login = () => {
   return (
     <div className='container-fluid row '>
       <div className='col-md-4 mx-auto py-5 '>
-        <div className=' mt-3'>
+        <div className=' mt-3 login-card'>
           <div className='card-body  mt-2'>
             <form className='rounded p-4 bg-white shadow' onSubmit={loginForm.handleSubmit}>
               <h1 className='text-center fw-bold fs-1 '><i class="fa-solid fa-user"></i></h1>

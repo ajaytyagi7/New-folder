@@ -109,7 +109,7 @@ const CompanyLogin = () => {
   return (
     <div className='container-fluid row mb-5 mx-5 '>
         <div className='col-md-4 mx-auto py-2'>
-            <div className='mt-5 '>
+            <div className='mt-5 login-card'>
                 <div className='card-body p-3 '>
                    <form className='rounded bg-white p-4 shadow' onSubmit={CompanyLoginForm.handleSubmit}>
                     <h1 className='text-center fw-bold'> Login</h1><hr />

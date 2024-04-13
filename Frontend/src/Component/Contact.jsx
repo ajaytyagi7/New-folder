@@ -53,7 +53,7 @@ const contactSchema=Yup.object().shape({
 
   return (
     <div className='container-fluid row mb-5'>
-      <div className='col-md-5 mx-auto py-3'>
+      <div className='col-md-5 mx-auto py-3 login-card'>
         <form className='  mx-auto  mt-4 bg-white  shadow mt-5' onSubmit={contactForm.handleSubmit}>
             
                 <div className='card-body p-3'>

@@ -105,7 +105,7 @@ const Signup = () => {
     <div className='container-fluid row  mb-5'>
 
 
-      <div className='col-md-5 mx-auto  py-3 '>
+      <div className='col-md-5 mx-auto login-card  py-3 '>
         <div className=' rounded-3 '>
           <div className='card-body '>
             <form className='bg-white p-4 rounded shadow' onSubmit={signupForm.handleSubmit}  >
