@@ -292,6 +292,8 @@ const Home = () => {
               <img className="brand-icon" src="https://media.designrush.com/inspiration_images/134805/conversions/_1512076803_93_Nike-preview_mobile.jpg" alt="" />
             </div>
           </SwiperSlide>
+          <br />
+          <br />
         </Swiper>
       </div>
 
