@@ -196,7 +196,7 @@ const ListingJob = () => {
                       <p className='mx-4'>{item.jobtype}</p>
                     </div>
 
-                    <Link to={"/detail/" + item._id}> <button className=' btn-detail-view float-end'>View Details</button></Link>
+                    <Link to={"/detail/" + item._id}> <button className=' btn btn-primary float-end'>View Details</button></Link>
                   </div>
 
                 </div>)
