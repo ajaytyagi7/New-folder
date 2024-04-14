@@ -50,7 +50,7 @@ const InterviewDetail = () => {
                   <p>{interviewData.experience}</p>
                   <p><i class="fa-solid fa-location-dot"></i> {interviewData.address}</p>
                   <hr />
-                  <button onClick={processApply} className='btn btn-primary float-end '>Apply </button>
+                  <button onClick={processApply} className='btn-detail-apply float-end '>Apply Now </button>
                   
                 </div>
               </div>
@@ -98,7 +98,7 @@ const InterviewDetail = () => {
 
   return (
     <div>
-      <div className='container'>
+      <div className='container-fluid'>
         {displayDetails()}
       </div>
     </div>

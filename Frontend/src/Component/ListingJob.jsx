@@ -135,10 +135,10 @@ const ListingJob = () => {
     <div className='container-fluid list-bg  '>
       <div className='row mx-auto  w-50' >
         <div className='col-md-10 mt-3'>
-        <input type="text" ref={searchRef} className='form-control' placeholder='Search job....' />
+        <input type="text" ref={searchRef} className='form-control p-2' placeholder='Search job....' />
         </div>
         <div className='col-md-2 mt-3'>
-        <button className='btn btn-primary ' onClick={searchJob}>Search</button>
+        <button className='button-list-search ' onClick={searchJob}>Search</button>
         </div>
       </div>
       <div className='container-fluid'>
@@ -196,7 +196,7 @@ const ListingJob = () => {
                       <p className='mx-4'>{item.jobtype}</p>
                     </div>
 
-                    <Link to={"/detail/" + item._id}> <button className='btn btn-primary float-end'>View Details</button></Link>
+                    <Link to={"/detail/" + item._id}> <button className=' btn-detail-view float-end'>View Details</button></Link>
                   </div>
 
                 </div>)
