@@ -43,13 +43,13 @@ const Home = () => {
         
           <div className='row mt-5'>
             <div className='col-md-4'>
-              <input type="text" className='form-control taxt-dark border border-dark ' placeholder='Job title or Company name ' ref={searchRef} />
+              <input type="text" className='form-control taxt-dark border border-dark p-2' placeholder='Job title or Company name ' ref={searchRef} />
             </div>
             <div className='col-md-4'>
-              <input type="text" className='form-control taxt-dark  border border-dark' placeholder='City or Region '  ref={locationRef}/>
+              <input type="text" className='form-control taxt-dark  border border-dark p-2' placeholder='City or Region '  ref={locationRef}/>
             </div>
-            <div className='col-md-4'>
-              <button className='btn btn-success  border border-dark' onClick={searchProduct}>Search </button>
+            <div className='col-md-4 '>
+              <button className='btn btn-success ' onClick={searchProduct}>Search </button>
             </div>
           </div>
        
@@ -205,18 +205,24 @@ const Home = () => {
        whileInView={"show"}
        viewport={{once:false,amount:0.7}}
       className='container p-2 mt-3'>
-        <div className='row  ' style={{ gap: 10 }}>
-          <div className='card col bg-primary-subtle' style={{ borderRadius: 20 }}>
-            <h4 className='text-center p-2'>Employers Looking to Hire</h4>
+        <div className='row  ' >
+          <div className='col-md-4'>
+          <div className='card  bg-primary-subtle p-3' style={{ borderRadius: 20 }}>
+            <h4 className='text-center '>Employers Looking to Hire</h4>
             <p className='mt-3 text-center'>Whether you are looking to enrich your workforce with the most dedicated candidates or meet Sec. 503 OFCCP compliance for your Affirmative Action Plan, abilityJOBS can help.</p>
           </div>
-          <div className='card col bg-primary-subtle' style={{ borderRadius: 20 }}>
-            <h4 className='text-center p-2'>Job Seekers with Disabilities</h4>
+          </div>
+          <div className="col-md-4">
+          <div className='card  bg-primary-subtle p-3' style={{ borderRadius: 20 }}>
+            <h4 className='text-center '>Job Seekers with Disabilities</h4>
             <p className='mt-3 text-center'>Disabled talent is in high demand. abilityJOBS has thousands of great positions posted by employers who are preapproved and committed to hiring people with disabilities.</p>
           </div>
-          <div className='card col bg-primary-subtle' style={{ borderRadius: 20 }}>
-            <h4 className='text-center p-2'>Veterans with Disabilities</h4>
-            <p className='mt-3 text-center'>U.S. Veterans with disabilities bring extraordinary talent and experience to the workforce, and employers are noticing. Veterans are encouraged to join abilityJOBS and are reminded to indicate service on profiles and resumes. Employers are searching!</p>
+          </div>
+          <div className="col-md-4">
+          <div className='card  bg-primary-subtle p-3' style={{ borderRadius: 20 }}>
+            <h4 className='text-center '>Veterans with Disabilities</h4>
+            <p className='mt-3 text-center'>U.S. Veterans with disabilities bring extraordinary talent and experience to the workforce, and employers are noticing. Veterans are encouraged to join abilityJOBS and are reminded to indicate service </p>
+          </div>
           </div>
         </div>
       </motion.div>

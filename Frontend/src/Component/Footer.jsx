@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
     <div className='container-fluid p-4 bg-dark text-white'>
-        <div className='row  p-3 '>
+        <div className='row  p-5 '>
             <div className='col-md-3'>
             <h3 className='fw-bold '>OffBeatCampus</h3>
             <p>Welcome to OffBeatCampus, where we believe in connecting talent with opportunity to create a brighter future. With a passion for fostering career growth and building strong professional relationships, we are committed to being a trusted partner in your job search journey.</p>
