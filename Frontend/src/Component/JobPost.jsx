@@ -65,7 +65,7 @@ const JobPost = () => {
                     <div className=''>
                         <div className='card-body'>
                             <form className='rounded bg-white shadow   p-4 bg-white' onSubmit={JobPostForm.handleSubmit} >
-                                <h2 className='text-center fw-bold'>Post Job</h2> <hr className='text-white' /><hr />
+                                <h2 className='text-center fw-bold'>Post Job</h2> <hr className='text-white' /><hr/>
                                 <span className='ms-4 fs-6 text-danger'>{JobPostForm.errors.email}</span>
                                 <input type="text" className='form-control mb-3 border border-secondary p-3' placeholder='Job Title' id='title' onChange={JobPostForm.handleChange} value={JobPostForm.values.title} />
 

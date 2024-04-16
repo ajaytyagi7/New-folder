@@ -49,7 +49,7 @@ const Home = () => {
               <input type="text" className='form-control taxt-dark  border border-dark p-2' placeholder='City or Region '  ref={locationRef}/>
             </div>
             <div className='col-md-4 '>
-              <button className='btn btn-success ' onClick={searchProduct}>Search </button>
+              <button className='button-list-search ' onClick={searchProduct}>Search </button>
             </div>
           </div>
        
