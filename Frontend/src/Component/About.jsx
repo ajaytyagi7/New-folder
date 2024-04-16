@@ -37,7 +37,7 @@ const About = () => {
               </div>
             </div>
             <div className="col-md-3">
-              <div className="">
+              <div className="about-card">
                 <div className="card-body">
                   <img className='img-fluid' src="https://img.freepik.com/free-photo/cheerful-curly-business-girl-wearing-glasses_176420-206.jpg?t=st=1710600500~exp=1710604100~hmac=0ce1238f722904100eb44d7e38a5e6e24d379473309ea29e33a31fa9046ef5e7&w=996" alt="" />
                 </div>
