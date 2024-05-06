@@ -135,11 +135,13 @@ const ListingJob = () => {
     <div className='container-fluid list-bg  '>
       <div className='row mx-auto  w-50' >
         <div className='col-md-10 mt-3'>
-        <input type="text" ref={searchRef} className='form-control p-2' placeholder='Search job....' />
+        <div className='p-4 input-group mx-auto'>
+                <input type="text"  ref={searchRef} className='form-control   ' placeholder='Search....' />
+                <button style={{backgroundColor:'#6b72fc'}} onClick={searchJob}  className=' btn btn-white fw-bold'>Search</button>
+               
+            </div>
         </div>
-        <div className='col-md-2 mt-3'>
-        <button className='button-list-search ' onClick={searchJob}>Search</button>
-        </div>
+        
       </div>
       <div className='container-fluid'>
         <div className='row'>
