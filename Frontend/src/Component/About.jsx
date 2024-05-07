@@ -3,7 +3,7 @@ import React from 'react'
 const About = () => {
   return (
     <div className='container-fluid  p-5'>
-        <div className='row mb-4 '>
+        <div className='row mb-4 gy-3'>
             <div className='col-md-7 shadow  bg-secondary-subtle'>
               <h1 className='text-center fw-bold mt-5'>About Us</h1><hr />
               <p className='p-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut esse voluptatibus a cupiditate, quae debitis eius incidunt voluptates! Similique obcaecati eligendi a maxime aut distinctio beatae, fugiat, expedita eos ipsum veritatis quisquam atque nisi deleniti adipisci eaque ab sunt explicabo? Beatae quo officiis ducimus? Reprehenderit distinctio inventore, fugiat veniam ex illo tempore. Sunt consectetur totam tenetur, iste expedita ipsa eveniet natus error doloribus explicabo quae temporibus ut, voluptatem consequuntur dolor id itaque ullam ex. Dicta, cupiditate. Vitae dignissimos perferendis placeat alias officiis nam magni, amet fugiat sequi, distinctio dolorem assumenda sint neque consequuntur rerum quidem error. Repudiandae nisi esse ullam illo. Excepturi, sed molestiae iusto mollitia harum architecto deserunt aut minima tempora quibusdam nobis voluptatem vero repudiandae. At tempore dolor nemo quaerat, voluptatibus suscipit? Consequatur, in. In eveniet voluptatem unde temporibus quod placeat ipsam minima adipisci saepe quis accusamus labore delectus ea natus mollitia facere at aliquid veritatis sequi, iusto nam veniam asperiores ex? Aspernatur harum incidunt beatae voluptatem nisi minus quisquam neque quasi inventore officiis corporis libero architecto recusandae, optio sint quidem quae animi ut sequi nulla mollitia placeat magni temporibus dolor? Eveniet omnis, maiores itaque corporis ducimus, quas cupiditate saepe eligendi obcaecati quibusdam molestias, nihil autem magnam voluptatum?</p>
@@ -13,7 +13,7 @@ const About = () => {
             </div>
         </div>
         <div className='container-fluid'>
-          <div className="row">
+          <div className="row gy-3">
             <h2>Our Team</h2>
             <div className="col-md-3">
               <div className="">
