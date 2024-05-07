@@ -74,7 +74,7 @@ const Home = () => {
       <div className=' container text-center mt-4  '>
         <div className='row g-1' >
           <div className=' col-md-3 home-card'>
-            <div className='shadow '>
+            <div className='shadow card '>
               <div className='card-body py-2'>
                 <img className='img-fluid'  src="https://img.freepik.com/premium-photo/hand-holding-silver-pen-against-grey-background-with-vignette_1134-82543.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais" alt="" />
                 <h5 className='mt-2'>Design & Creative</h5>
@@ -82,7 +82,7 @@ const Home = () => {
             </div>
           </div>
           <div className=' col-md-3 home-card'>
-            <div className='shadow'>
+            <div className='shadow card'>
 
               <div className='card-body py-2'>
                 <img className='img-fluid'  src="https://img.freepik.com/free-photo/side-view-man-working-desk_23-2149930938.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais" alt="" />
@@ -92,7 +92,7 @@ const Home = () => {
             </div>
           </div>
           <div className=' col-md-3 home-card'>
-          <div className='shadow'>
+          <div className='shadow card'>
 
           <div className='card-body py-2'>
 
@@ -102,7 +102,7 @@ const Home = () => {
             </div>
           </div>
           <div className=' col-md-3 home-card'>
-          <div className='shadow'>
+          <div className='shadow card'>
 
           <div className='card-body py-2'>
 
@@ -114,20 +114,21 @@ const Home = () => {
         </div>
         </div>
 
-      <div className='container text-center p-3'>
+      <div className='container text-center p-5'>
         <div className='row gy-3 '>
-          <div 
-           
-          className='card col-md-6 bg-secondary-subtle  '>
-            <h1 className='home-campus fw-bold'> Crack Off Campus <br />
-              Inertview</h1>
-            <h4>" Join our dynamic team!  We're on the lookout for passionate individuals ready to make
-              an impact. Off-campus hiring is now in full swing!  Explore exciting opportunities and take the next step in your career journey with us. Apply today! #Hiring #OffCampusRecruitment #CareerOpportunities #JoinOurTeam"</h4>
+          <div className=' col-md-6   '>
+           <div className="shadow ">
+           <img className='img-fluid' src="https://img.freepik.com/free-photo/well-dressed-young-employee_1098-3828.jpg?t=st=1715060800~exp=1715064400~hmac=5b5ad40c9ac81671d98b3c4c5485216d90d202810c10820fc9d2a9054889352c&w=996" alt="" />
+           </div>
+            
           </div>
           <div
           
           className='col-md-6'>
-            <img className='img-fluid'  src="https://img.freepik.com/free-photo/portrait-serious-executive-explaining-tasks-employee_1262-17994.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais" alt="" />
+            <div className="shadow">
+            <img className='img-fluid '  src="https://img.freepik.com/free-photo/portrait-serious-executive-explaining-tasks-employee_1262-17994.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais" alt="" />
+
+            </div>
           </div>
         </div>
 
@@ -185,15 +186,20 @@ const Home = () => {
        initial='hidden'
        whileInView={"show"}
        viewport={{once:false,amount:0.7}}
-      className='container p-4 mt-4' style={{ gap: 20 }}>
-        <div className='row' style={{ gap: 20 }}>
-          <div className=' card shadow col p-2 bg-warning-subtle'>
+      className='container p-4 mt-4' >
+        <div className='row'>
+         <div className="col-md-6">
+         <div className=' card shadow  p-2 bg-warning-subtle'>
             <h3 className='text-center'>No Aggregators or Backfilled Jobs </h3>
             <p className=' text-center'>Job postings on abilityJOBS.com are here out of intention and commitment to hire job seekers with disabilities. Employers’ purposeful engagement supports their Affirmative Action goals.</p>
           </div>
+         </div>
+         <div className="col-md-6">
           <div className=' card shadow col p-2 bg-warning-subtle'>
-            <h3 className='text-center'>Largest Bank of Job Seekers </h3>
+         
+           <h3 className='text-center'>Largest Bank of Job Seekers </h3>
             <p className='text-center'>abilityJOBS is the largest searchable resume bank of talented job seekers with disabilities. Recruiters can actively connect with potential candidates enhancing outreach efforts.</p>
+           </div>
           </div>
         </div>
       </motion.div>
@@ -202,23 +208,23 @@ const Home = () => {
       <div
      className='container p-2 mt-3'  >
         <div className="container">
-          <div className="row" style={{gap:150}}>
-            <div className="col-md-3">
+          <div className="row" >
+            <div className="col-md-4">
               <div className='card shadow bg-primary-subtle p-3' >
                 <h4 className='text-center '>Employers Looking to Hire</h4>
-                <p className='mt-3 text-center'>Whether you are looking to enrich your workforce with the most dedicated candidates or meet Sec. 503 OFCCP compliance for your Affirmative Action Plan, abilityJOBS can help.</p>
+                <p className='mt-3 text-center'>Whether you are looking to enrich your workforce with the most dedicated candidates or meet Sec. great positions posted by employers who 503 OFCCP compliance for your Affirmative Action Plan, abilityJOBS can help complianc.</p>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-4">
               <div className='card shadow bg-primary-subtle p-3' >
                 <h4 className='text-center '>Job Seekers with Disabilities</h4>
                 <p className='mt-3 text-center'>Disabled talent is in high demand. abilityJOBS has thousands of great positions posted by employers who are preapproved and committed to hiring people with disabilities compliance for your Affirmativbs.</p>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-4">
               <div className='card shadow  bg-primary-subtle p-3' >
                 <h4 className='text-center '>Veterans with Disabilities</h4>
-                <p className='mt-3 text-center'>U.S. Veterans with disabilities bring extraordinary talent and experience to the workforce, and employers are noticing. Veterans are encouraged to join abilityJOBS and are reminded to indicate service </p>
+                <p className='mt-3 text-center'>U.S. Veterans with disabilities bring extraordinary talent and experience to the workforce, and employers are noticing. Veterans are encouraged to join abilityJOBS and are reminded to indicate service your Affirmativbs </p>
               </div>
               </div>
           </div>
@@ -312,7 +318,7 @@ const Home = () => {
           <div className='  col-md-6'>
             <img className='w-100' src="https://img.freepik.com/free-photo/creative-people-working-office_23-2147656715.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=sph" alt="" />
           </div>
-          <div className='col-md-6 p-5'>
+          <div className='col-md-6 '>
             <h6 className=''>HOW WE WORK</h6>
             <h1 className='fw-bold'>What is an employer for Generation?</h1>
             <p>With our programs, we solve a wide range of employer challenges – skilled talent shortages, problems with on-the-job performance, reskilling needs, and higher turnover in important roles – with our unique approach and our determined graduates.
