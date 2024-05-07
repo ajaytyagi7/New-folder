@@ -224,7 +224,7 @@ const Home = () => {
             <div className="col-md-4">
               <div className='card shadow  bg-primary-subtle p-3' >
                 <h4 className='text-center '>Veterans with Disabilities</h4>
-                <p className='mt-3 text-center'>U.S. Veterans with disabilities bring extraordinary talent and experience to the workforce, and employers are noticing. Veterans are encouraged to join abilityJOBS and are reminded to indicate service your Affirmativbs </p>
+                <p className='mt-3 text-center'>U.S. Veterans with disabilities bring extraordinary talent and experience to the workforce, and employers are noticing. Veterans are encouraged to join abilityJOBS and are reminded to indicate </p>
               </div>
               </div>
           </div>
