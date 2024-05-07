@@ -187,7 +187,7 @@ const Home = () => {
        whileInView={"show"}
        viewport={{once:false,amount:0.7}}
       className='container p-4 mt-4' >
-        <div className='row'>
+        <div className='row gy-3'>
          <div className="col-md-6">
          <div className=' card shadow  p-2 bg-warning-subtle'>
             <h3 className='text-center'>No Aggregators or Backfilled Jobs </h3>
@@ -208,7 +208,7 @@ const Home = () => {
       <div
      className='container p-2 mt-3'  >
         <div className="container">
-          <div className="row" >
+          <div className="row gy-3" >
             <div className="col-md-4">
               <div className='card shadow bg-primary-subtle p-3' >
                 <h4 className='text-center '>Employers Looking to Hire</h4>
@@ -329,6 +329,43 @@ const Home = () => {
 
         </div>
       </motion.div>
+
+      <div>
+        <div className="row p-4 gy-3">
+          <div className="col-md-3">
+            <div className="card shadow">
+              <div className="card-body">
+                <h4 className="text-center fw-bold">Card title</h4>
+                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-3">
+            <div className="card shadow">
+              <div className="card-body">
+                <h4 className="text-center fw-bold">Card title</h4>
+                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-3">
+            <div className="card shadow">
+              <div className="card-body">
+                <h4 className="text-center fw-bold">Card title</h4>
+                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-3">
+            <div className="card shadow">
+              <div className="card-body">
+                <h4 className="text-center fw-bold">Card title</h4>
+                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

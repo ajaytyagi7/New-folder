@@ -109,7 +109,7 @@ const Signup = () => {
         <div className=' rounded-3 '>
           <div className='card-body '>
             <form className='bg-white p-4 rounded shadow' onSubmit={signupForm.handleSubmit}  >
-              <h1 className='text-center fw-bold'>Create Account</h1>
+              <h1 className='text-center fw-bold'><i class="fa-solid fa-users"></i></h1>
               <hr />
               <span className='ms-4 fs-6 text-danger'>{signupForm.touched.name && signupForm.errors.name}</span>
               <input type="text" className='form-control border border-secondary p-2  border border-dark '  placeholder='Username' id='name' onChange={signupForm.handleChange} value={signupForm.values.name} />&nbsp;
