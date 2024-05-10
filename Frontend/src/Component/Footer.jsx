@@ -12,9 +12,9 @@ const Footer = () => {
             <div className='col  bg-dark '>
                 <h4>About</h4>
                 <div className='card-body '>
-                    <Link  className='text-white text-decoration-none'>About Us</Link><br />
-                    <Link className='text-white text-decoration-none'>Contact Us</Link><br />
-                    <Link className='text-white text-decoration-none'>Privacy Policy</Link><br />
+                    <Link to='/About' className='text-white text-decoration-none'>About Us</Link><br />
+                    <Link to='/Contact' className='text-white text-decoration-none'>Contact Us</Link><br />
+                    <Link  className='text-white text-decoration-none'>Privacy Policy</Link><br />
                     <Link className='text-white text-decoration-none'>Terms & Conditions</Link><br />
                     <Link className='text-white text-decoration-none '>Career</Link><br />
 
@@ -23,7 +23,7 @@ const Footer = () => {
             <div className='col-md-3  bg-dark '>
                 <h4>Service</h4>
                 <div className='card-body '>
-                    <Link  className='text-white text-decoration-none'>Job</Link><br />
+                    <Link to='/ListingJob' className='text-white text-decoration-none'>Job</Link><br />
                     <Link className='text-white text-decoration-none'>Interview</Link><br />
                     <Link className='text-white text-decoration-none'>Help in career</Link><br />
                     <Link className='text-white text-decoration-none'>Best Exeprience</Link><br />

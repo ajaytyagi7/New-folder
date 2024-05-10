@@ -73,16 +73,16 @@ const Home = () => {
 
       <div className=' container text-center mt-4  '>
         <div className='row g-1' >
-          <div className=' col-md-3 home-card'>
-            <div className='shadow card '>
+          <div className=' col-md-3 '>
+            <div className='shadow card-hover card '>
               <div className='card-body py-2'>
                 <img className='img-fluid'  src="https://img.freepik.com/premium-photo/hand-holding-silver-pen-against-grey-background-with-vignette_1134-82543.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais" alt="" />
                 <h5 className='mt-2'>Design & Creative</h5>
               </div>
             </div>
           </div>
-          <div className=' col-md-3 home-card'>
-            <div className='shadow card'>
+          <div className=' col-md-3 '>
+            <div className='shadow card-hover card'>
 
               <div className='card-body py-2'>
                 <img className='img-fluid'  src="https://img.freepik.com/free-photo/side-view-man-working-desk_23-2149930938.jpg?size=626&ext=jpg&ga=GA1.1.913293683.1703873181&semt=ais" alt="" />
@@ -91,8 +91,8 @@ const Home = () => {
                 </div>
             </div>
           </div>
-          <div className=' col-md-3 home-card'>
-          <div className='shadow card'>
+          <div className=' col-md-3 '>
+          <div className='shadow card-hover card'>
 
           <div className='card-body py-2'>
 
@@ -101,8 +101,8 @@ const Home = () => {
             </div>
             </div>
           </div>
-          <div className=' col-md-3 home-card'>
-          <div className='shadow card'>
+          <div className=' col-md-3 '>
+          <div className='shadow card-hover card'>
 
           <div className='card-body py-2'>
 
@@ -331,36 +331,36 @@ const Home = () => {
       </motion.div>
 
       <div>
-        <div className="row p-4 gy-3">
+        <div className="row p-5 gy-3">
           <div className="col-md-3">
-            <div className="card shadow">
+            <div className="card card-hover bg-secondary-subtle shadow">
               <div className="card-body">
-                <h4 className="text-center fw-bold">Card title</h4>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h4 className="text-center fw-bold"> Explore Opportunities</h4>
+                <p className="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
             </div>
           </div>
           <div className="col-md-3">
-            <div className="card shadow">
+            <div className="card bg-secondary-subtle card-hover shadow">
               <div className="card-body">
-                <h4 className="text-center fw-bold">Card title</h4>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h4 className="text-center fw-bold"> Unlock Your Potential</h4>
+                <p className="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
             </div>
           </div>
           <div className="col-md-3">
-            <div className="card shadow">
+            <div className="card card-hover bg-secondary-subtle shadow">
               <div className="card-body">
-                <h4 className="text-center fw-bold">Card title</h4>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h4 className="text-center fw-bold"> Forge Your Career Path</h4>
+                <p className="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
             </div>
           </div>
           <div className="col-md-3">
-            <div className="card shadow">
+            <div className="card card-hover bg-secondary-subtle shadow">
               <div className="card-body">
-                <h4 className="text-center fw-bold">Card title</h4>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h4 className="text-center fw-bold">Empower Your Future</h4>
+                <p className="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
             </div>
           </div>
